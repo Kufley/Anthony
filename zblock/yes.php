@@ -1,0 +1,1 @@
+<img src="yes.gif" title="Yes, You can use this method." border="0" width="50" height="50">

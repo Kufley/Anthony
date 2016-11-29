@@ -1,0 +1,13 @@
+Although it has many omissions, contains much that is apocryphal, or at least
+widely inaccurate, it is the only thing we have to go on at the moment.
+
+A rewrite is very overdue!
+
+Please, if you have any questions regarding ZB Block, ask them in the forums at:
+http://www.spambotsecurity.com/forum/
+
+(Remember, search first... failing that, ask away!)
+
+Once I have some time, I will get to work on compiling version 2 of the manual.
+
+Zap :)

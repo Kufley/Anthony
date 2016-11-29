@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:/landing.php
+Disallow: http://weightlosshappens.com/?tag=metabolism
+Disallow: http://weightlosshappens.com/termsofservice.php
+Disallow: /*?

@@ -1,0 +1,4 @@
+/* CSS Document */
+.fade_popup{top:0em; position:absolute; background-color:#000000; }
+.data_on_fade{  z-index:2; display:none;  background-color:#fff; position:absolute; overflow:hidden;}
+

@@ -1,0 +1,215 @@
+ZB BLOCK
+(Short for Zaphod B. Blocker)
+Copyright 2008,2009,2010 by Zaphodb777 under GPL V. 2.0
+(Free to use, free to copy, free to modify, free to distribute, just give me
+credit when you do so!)
+
+REQUIRES: PHP on your server!
+BACK UP YOUR SITE/FILES BEFORE TRYING
+
+This script is designed to detect certian behaviors detrimental to websites
+(MySQL hacks, forum spam, and much more),or known bad addresses attempting to
+access your website (more than 100 million checked).. It then will send the bad
+robot (usually) or hacker to a descriptive 403 after a ~5 second wait
+(adjustable) to prevent flooding.
+
+Script and Signature Updates are available at:
+  http://www.spambotsecurity.com/zbblock.php
+
+Forum for this software is at:
+  http://www.spambotsecurity.com/forum
+
+This script should work without modification on any PHP equipped webserver, and
+MySQL is not needed.
+
+*** TO INSTALL ***
+
+IF ON A UNIX/LINUX HOST THAT HAS PHP RUNNING UNDER USER NAME "NOBODY"(bad idea):
+Please generate /zbblock/ , /zbblock/install/ , and /zbblock/vault/, and set
+directory permissions to 777 (ZB Block uses flat file storage) off the site's
+root directory. Directories will be re-locked with an .htaccess file.
+
+ALL HOSTS (Windows and properly set-up unix and linux hosts):
+
+Load http://www.yoursite.tld/zbblock/setup.php
+
+Follow instructions.
+
+*** TO USE ***
+
+To use, place the line seen at the end of install at the top of, or as near as
+you can to the top of your .php pages you wish to protect.
+
+Script WILL NOT WORK with plain html!
+
+Script will not protect anything that has been sent, and may cause errors if the
+output has started. So place it in the file at the very top/left (byte 0) corner
+and then the old start line immediately after it on the same line.
+
+For instance, in the old version of the file:
+
+<?php
+// Some cool script version 0.1.0
+etc...
+
+in the new version:
+<?php [your specific zb-block hook code provided at end of setup2.php] ?><?
+// Some cool script version 0.1.0
+
+Remember, add no spaces or returns.
+
+***Here are some confirmed compatible scripts and where to put your "hook" code,
+If a URL is given, please check that URL.
+
+Drupal: Add ZB Hook to index.php in the root directory or 
+        the directory Drupal is run from. 
+
+e107: http://wiki.e107.org/index.php?title=HOWTO:Include_Security_Scripts
+(e107 OFFICIALY SUPPORTS ZB BLOCK)
+
+Flatpress: http://www.spambotsecurity.com/forum/viewtopic.php?f=42&t=534
+
+IPB: http://www.spambotsecurity.com/forum/viewtopic.php?f=28&t=353
+
+Joomla: http://www.spambotsecurity.com/forum/viewtopic.php?f=29&t=354
+
+Kayako eSupport: Add ZB Hook to index.php 
+
+PhpBB: Add ZB Hook to common.php in the root directory.
+
+Raven Nuke: http://www.spambotsecurity.com/forum/viewtopic.php?f=40&t=373
+
+SMF: http://www.spambotsecurity.com/forum/viewtopic.php?f=41&t=499
+
+Vbulletin: Add ZB Hook to global.php in root of forum folder.
+
+Wordpress: http://www.spambotsecurity.com/forum/viewtopic.php?f=33&t=479
+
+Xaraya: Add ZB Hook to index.php (unconfirmed?) 
+
+*** TO UPDATE SIGNATURES ***
+
+1. Go to http://www.spambotsecurity.com/zbblock_download.php
+
+2. Download the new signature file.
+
+3. Overwrite the signatures.inc in your /vault/
+
+Simple no?
+
+*** TO ADD YOUR OWN CUSTOM SIGNATURES ***
+
+FIRST: Please put all custom signatures in customsig.inc in the vault! This system was made so
+main signatures could be left alone, and updated without worry.
+
+SECOND: Remember, if you write a bypass, since the signatures are in a locked subdirectory of your site
+no one will know what that bypass is, unless your friend transgresses in some other way. SO, if you make
+a bypass...
+
+  A. Monitor your logs/posts for your friend fouling up. (and exposing the bypass)
+
+  B. Change it often.
+
+  C. As with all things GPL I don't take any responsibility for this program whatsoever!
+
+THIRD: Remember to make a backup copy of your custom signatures under another filename,
+so when the main program is updated, you will be able to restore your customs (if still compatible)!
+
+FOURTH: Do not forget to report them at http://zaphodb777.dyndns.org/forum if they prove useful!
+
+ FORMAT IS...
+
+$ax = $ax + ([type of match]([variable to be searched],"[pattern]","[what is the reason for the check]"));
+
+or..
+
+$ax = $ax + (minmatch([variable to be searched],"[pattern]",[allowed occurances],"[what is the reason for the check]"));
+
+[type of match] can be:
+
+* lmatch:   Check for a match at the left side of the variable only. (Good for Singular IPs)
+
+* rmatch:   Check for a match at the right side of the variable only. (Good for hostnames)
+
+* inmatch:  Check for a match anywhere in the variable to be searched.
+
+* minmatch: Check for a match anywhere in the variable to be searched, and see if it goes over allowed occurances (Ususally 1).
+
+
+[variable to be searched] should be:
+
+$address     : The IP address of the client.
+
+$hoster      : The Hostname of the client.
+
+$loaded      : File that was loaded on your machine, lowercased.
+
+$pathinfo    : Binary T/F as to whether the client sent a path in the URL.
+
+$query2      : The raw query of the URL used. (use for case sensitive matches)
+
+$query       : The lowercased query of the URL used. (use for non-case sensitive matches)
+
+$querydec    : The lowercased and decoded (removal of %## garbage) query of the URL used.
+               (use to catch "cloaked" attack strings)
+
+$requesturi  : The whole of the request on your webserver.
+
+$pathinfo    : True (1) if pathing of your files was attempted (remote include attack).
+
+$rawpost     : Post data client sent.
+
+$fromhost    : Referrer.
+               (Don't absolutely rely on this one alone, it can be cloaked by the visitor to say anything!)
+
+$useragent   : Name/Type of client accessing you.
+               (Don't absolutely rely on this one alone, it can be cloaked by the visitor to say anything!)
+
+$lcuseragent : Lowercased Name/Type of client accessing you.
+               (Don't absolutely rely on this one alone, it can be cloaked by the visitor to say anything!)
+
+
+[pattern] the part of the URL sent to your machine that is indicitave of an attack.
+
+[allowed occurances] is how many times the occurance of [pattern] is allowed before throwing a detection.
+
+[what is the reason for the check] Give explanation of why if found this block acts.
+
+
+* IP range match.
+
+$ax = $ax + (iprange($address,"[low ip]","[high ip]","[host/reason]"));
+
+[low ip]  : Classic quadot (www.xxx.yyy.zzz) beginning of range IP address. 
+
+[high ip] : Classic quadot (www.xxx.yyy.zzz) end of range IP address.
+
+[host/reason] what is blocked by range, and why.
+
+* CIDR IP range Match
+
+$ax = $ax + (cidrblock($address,"[CIDR range]","[host/reason]"));
+
+As before, except...
+
+[CIDR range] : Quadot with a /bitmask. (www.xxx.yyy.zzz/bitmask)
+
+
+Not mentioned in the file itself, you can cause any match to invert for the sake of special exceptions/bypasses
+by changing:
+
+$ax = $ax +
+to
+$ax = $ax -
+
+Which is useful for letting a single friend's IP through an IP range block, or whatever.
+ax must be 0 or lower than 0 to allow a client to access!
+
+*** END OF SHORT DOCS... FOR MORE INFO, PLEASE READ THE MANUAL ***
+
+If you have any problems, bugs, suggestions for new inclusions into the blocking signatures, or
+ideas for improvement, please come to http://www.spambotsecurity.com/forum/index.php and say so!
+
+Thanks for trying it out, and I hope to hear from you soon!
+
+EOF

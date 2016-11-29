@@ -1,0 +1,64 @@
+
+.up_arrow{background:url(images/up_arrow.jpg) no-repeat; width:17px; height:17px; float:left; margin:0px 0px; padding:0px 0px; border:0px solid #F00; position:absolute; top:0px;}
+.down_arrow{background:url(images/down_arrow.jpg) no-repeat; width:17px; height:17px; float:left; margin:0px 0px; padding:0px 0px; position:absolute; bottom:0px;}
+.scroll_arrow{background:url(images/scroll-boll.jpg) no-repeat; width:17px; height:42px; float:left; margin:17px 0px 17px 1px; padding:0px 0px 0px 0px; border:0px solid #000;}
+
+
+/*================Start For Find Your Answers================*/
+#SidebarScroller12_ScrollBar {
+	/*height: 300px;*/
+	width: 17px;
+	float: right;
+	position: relative;
+	border:0px solid #F00;
+}
+#SidebarScroller12_GripperContainer
+{
+	height:560px;
+	position: relative;
+	left: 0px;
+	top:0px;
+	cursor: pointer;
+	cursor: hand;
+	background: url(images/scroll-back-strip.jpg) repeat-y;
+	width:17px;
+	border:0px solid #FF0000;
+	text-align: center;
+	}
+#SidebarScroller12_Gripper
+{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	cursor: pointer;
+	cursor: hand;
+	border:none;
+	text-align: left;
+	border: 0px solid #00FF00;
+	width: 17px;
+}
+
+
+
+ #SidebarScroller12_Content{
+	height:528px;
+	width:750px;
+	overflow: hidden;
+	margin-top:17px;
+	margin-bottom:0px;
+	position: relative;
+	float: left;
+	margin-right: 0px;
+	border:0px solid #00FF00;
+	
+}
+#SidebarScroller12_ScrollingArea{
+	position: absolute;
+	width:750px;
+	top: 0px;
+	left: 0px;
+	border: 0px solid #FF0000;
+}
+/*================End For Find Your Answers================*/
+
+

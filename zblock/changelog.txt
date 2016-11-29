@@ -1,0 +1,433 @@
+ZB BLOCK CHANGELOG 
+
+0.4.9 Beta 05/28/11 - "Jaguar"
+
+Feature: Multiple new time formats. Choose inside of zbblock.ini .
+
+Feature: Time offset... For those people who can't stand being locked to server
+         time. Value is in hours differnt from server time. Warning: Does not
+         change the displayed offset due to the fact it recomputes on the Unix
+         Epoch value.
+
+Feature: Regular Expression Match (Kudos to Tom Parkison). Use with care to make
+         sure nothing will be executed.
+
+Feature: Ajax Opt-Out system. By declaring in zbblock.ini that your site does
+         not use AJAX, you can increase your injection resistance in POST many
+         times what an AJAX site is compatible with. AJAX is very sloppy and
+         allows script written on the client to be executed on the server, which
+         is a hack waiting to happen. As most systems pass .xml through the php
+         interpreter also, AJAX cannot be declared safe... and neither can
+         Ajax's command injections normally be overlooked by ZB Block. Please
+         IF YOU DO NOT USE AJAX, OPT OUT IN ZBBLOCK.INI FOR MORE PROTECTION!
+
+Feature: On multiple 503s sent to banned host, you can choose to send them a
+         redirect to their localhost (127.0.0.1), with a reported length of -1
+         bytes. Actual size is about 1/2 of a 503 response.
+
+Feature: Permanent ban immunity for known good crawlers.
+
+Feature: IP Permanent Bans Database split into 2 files. One is IPs only, for
+         speed of access by the script. The other is IPs and Hostnames, for
+         easier checking of permanent bans accidentally levied against innocent
+         mistakes.
+
+Feature: Header Switch for Reverse Proxy Service. If you sit behind cloudflare,
+         or some other host with a reverse proxy, you can define the header
+         value your ZB Block should use to determine the originating IP. USE
+         WITH CAUTION, AS IF YOUR SITE IS DIRECTLY ACCESSIBLE BY IP, A CLIENT
+         COULD TAMPER WITH THIS DATA. Recommend a custom signature to ban
+         any native IP ( using $_SERVER['REMOTE_ADDR'] ) that does not come from
+         your reverse proxy's ranges.
+
+Change: 403 page slightly friendlier, with more prominent trouble-ticket e-mail
+        link.
+
+Change: File writes now done in burst mode to reduce overlapping log writes
+        caused by DoS hammering.
+
+Change: Reasons why block must be punctuated in the signature now. This allows
+        for cleaner use of the search functions without leaving a trail of
+        breadcrumbs (ie: "reason 1 . . . reason 2")
+
+Change: User agent now stored in a variable for more consistent updating.
+
+Change: Wrong whitelist password will now report a miss. However, now it will
+        increment a counter towards baning. No need to be secretive anymore.
+
+Bugfix: Post data truncated at 4MB to avoid memory use conflict with file
+        uploading.
+
+Bugfix: All filenames now use lower-case to avoid problems with hosts run by
+        strange geeks who cannot understand that a single bit change does not
+        mean the end of the world for the Linux operating system. There is a
+        difference between nerds and geeks... geeks go out of their way to be
+        incompatible with society, as their intellect does not cause this
+        automatically.
+
+Bugfix: s2b ( Human readable to binary ) changed to be case insensitive.
+
+Bugfix: Unset now used instead of $tring nulling ("").
+
+Bugfix: Filewrites now flushed before close... for the most part.
+
+Bugfix: IP database now prepends IPs with a space to avoid substring collisions.
+
+Bugfix: $zbregcheck now globaled to allow for hiccup in variable sharing (some
+        systems).
+
+0.4.8 Beta 08/24/10 - "Cougar"
+
+Bugfix: Now compresses spaces and other garbage characters to avoid obfuscation
+        of command detections.
+
+        The fix is through the use of 6 new variables in the script and in the
+        signatures these variables are: $querydecsws, $fromhostsws,
+        $lcuseragentsws, $lcrequesturisws, $rawpostsws, and $lcpostsws. These
+        variables are exactly the same as their non "sws" extended counterparts,
+        except these strip all whitespace, and non-normal ASCII out.
+
+        Why do this, because in php "echo('something');"
+        is equivalent to "echo ('something');"
+        or even "echo         ( 'something' );"!
+        The old system, if it was looking for "echo(" would have only triggered
+        on the first instance. Now, thanks to the new "sws" variables, this
+        gross oversight has been remedied.
+        "sws" by the way means "Strip WhiteSpace".
+
+
+
+0.4.7 Beta 07/12/10 - "Panther"
+
+Feature: Silent blocking with response replaced by a page forward... Unless
+         permenantly banned. If so, the connection will be killed without
+         result. The far end user will see "Connection Closed by Remote Host".
+         (NOTICE: This is very user unfriendly.)
+
+Feature: StopFourmSpam.com positive results are cached by appending
+         bannedips.csv with the new bad IPs.
+
+Feature: Registration, and Confirmation attempt throttles. Hard on bots, easy on
+         humans and remote databases. Fault count + 3 times per hour allowed.
+         (6 registration and confirmation attempts by default. Fault count 3 + 3
+         more registration or confirmation pageloads. Should be enough. Will
+         make a standalone ini variable in future version).
+
+Feature: CIDR Range blocking. Now you don't have to figure the IPs out when
+         blocking according to an ASN listing on a website.
+         Just use this format... 
+
+         $ax = $ax + (cidrblock($address,"<Base IP>/<bitmask>","CIDR Block")); 
+
+         So for instance to block your own LAN range (don't do it!)... 
+
+         $ax = $ax + (cidrblock($address,"192.168.0.0/24","CIDR Block LAN"));
+
+Feature: More potent and accurate filtering of POST data to allow the detection
+         of variable tampering. Also found a new, accurate way to compress
+         escaped escapes to unmask character obfuscation.
+
+Feature: Settable e-mail address (optional, default=off) in ZB Block .ini
+         designed to allow blocked users to send in a "trouble report" with the
+         fault details, through a specially crafted mailto: link. This is
+         advisable if you have a disposable e-mail address, like 
+         "blocked@yourdomain.tld" as no doubt scrapers will harvest the e-mail
+         address. If not activated, nothing about it is shown.
+
+Feature: Dated auto-changing killed_log.txt file based on php date() function.
+         This allows you to pre-pend the killed_log.txt filename, with a dating
+         system of your choice. More information in the zbblock.ini file.
+
+
+0.4.6 Beta 02/16/10 - "Bearcat"
+
+Feature: User-Agent String! Now identifies to remote databases as
+         "ZB_Block_0.4.x"
+
+Feature: Human to Boolean operations now using more compatible || instead of OR.
+
+Speed up: Only check IPs once if un-resolvable to name. If name doesn't resolve
+          ad IP to NOLOOKUP.CSV and check this first next time. Should lead to
+          signifigant speed-ups for users on unnamed IPs.
+
+Speed up: If a violation of general security rules occurs during registration
+          confirmation, or login, the remote database checks are skipped.
+
+Feature: Now bad IP catching for registration/login identifies if it came from
+         your local bannedips.csv, or the remote SFS database.
+
+Feature: Record number of violation now shared with the client to speed
+         debugging of bad catches by site owner.
+
+Bug Fix: Non "$zb" headed variables now unset at end of execution to fix
+         variable collisions with some rare scripts.
+
+0.4.5 Beta 11/20/09 - "Jedi Potato" - Feel the power of the fork. 3---
+
+Feature: Now can use local copy of StopForumSpam.com's bannedips.csv
+
+Feature: Staged Registration Checker
+         1. If IP is not found in local bannedips.csv then...
+         2. Then check live StopForumSpam.com database. If not found there...
+         3. Then check live hosts-file.net database. If not found there...
+         4. Then check TOR project.
+         If found at any stage before 4, the rest of the checks are skipped to
+         speed things up, and save load on other databases.
+
+Feature: Compatibility Layer File. This file is for touchy signatures that are
+         incompatible with some scripts/fourms/blogs/cmses out there. The
+         the weakest (but still strong) version ships with ZB Block. For more
+         strength, download the one that fits your package from the ZB Block
+         download page. Feel free to request new compatibilty layer files if you
+         need one.
+
+Feature: Ignore Remote Databases IF IP=127.0.0.1 OR IP=192.168.0.0 for
+         registration. All other blocks still active. This is part of the
+         compatibility layer file so additions/deletions are kept.
+
+Feature: New HTTP header returns to alert admins of compromised servers that
+         they are being abused by robots/hackers. The new fields are...
+         1. Warning: 199 <yourhostname>:80 <reason> <yourhostname>
+         2. Abuse: <reason>
+         These are output along with the 403 errors, but skipped once the
+         attacker falls into 503 hell. Not supported by many servers, but still
+         a good way if adopted as per RFC 2616 (Warning: 199) and my own "human
+         readable" idea (Abuse: , as Warning: 199 is in such rare use that most
+         admins might be confused), to alert the innocent.
+
+Change: Default behavior is now to write killed_log.txt to a human readable
+        area, as it causes no security risk, and helps for rapid debugging of
+        problems reported by users.
+
+Change: Signature files now model numbered internally in comments.
+
+Change: Appendix added to manual on how to handle compatibility.inc
+
+Bugfix: Due to some servers not having adequate php execution times, most of the
+        pauses have been removed. You can turn them back up after install in the
+        .ini to suit your taste.
+
+
+
+
+0.4.4 Beta 08/25/09 - Bugfix+ version
+
+Bugfix: Turned off that annoying super debug mode that snuck in, in the last
+        version.
+
+Bugfix: Bad signature in last installer changed.
+
+Feature: Added PHP-Nuke registration checker capability.
+
+Experiment: Included the 0.0.1 version of ZB Log. Which can be used in much the
+            same way ZB Block is, but for currently non existing files that
+            hackers are getting 404s on now, to probe and record what they are
+            trying to do. FOR EXPERTS ONLY! MAY CAUSE RETRIBUTION IF USED.
+            It will generate a log like ZB Block but everyone gets a 403 for
+            blindly poking around in your site. Uses the ZB Block signatures
+            to "mark" attacks that are allready known. If you see something new
+            report it in ZB Block's forums so we can add it to signatures.			
+
+0.4.3 Beta 08/23/09
+
+Bugfix: Undefined variable $zbregcheck now defined in any case.
+
+Feature: ZB Block now has a manual! Should make use a lot easier!
+
+Feature: ZB Block has a password setting in the .ini file, which is important
+         for the whitelist feature, and the future control panel.
+
+Feature: 3 layer Detection/Banning/Whitelist Database. The first layer,
+         Detection, records violations made by IPs. This is then scanned for
+         X entries (.ini setting), if found, the ip and hostname is added to the
+         banning database, which switches ZB Block behavior to displaying a 503:
+         Service Temporarily Unavailable, with a 1 day timeout for that IP only.
+         Of course this is actually a permanent ban, but most bots ignore 403s
+         and other permanent ban types.
+
+         The 3rd local database is the Whitelist, this will make your current IP
+         immune from a permanent ban, but still subject to inspection. You can
+         set this by going to any protected page and adding ?wlpw=<password you
+         set in the .ini> to the URL.
+
+         Also, there is daily housekeeping on the databases. The detection data-
+         base is purged. The permanent banning database has any accidental
+         duplicate lines removed, which can happen on rapid-fire hammering by
+         bots.
+
+Feature: Adjustable (.ini file) timeout on remote database access.
+
+Feature/Change: Adjustable (.ini file) registration timer trap. Slows down bad
+                bots.
+
+
+0.4.2 Beta 07/29/09
+
+Feature: Hosts-File.net (hpHosts) Blacklist Registration/Login Blocker!
+         (ini setting / Default: on) Check to see if IP of attempt to
+         register is associated with a known forum/comment spammer, or
+         hostile attacker. Allows read-only access. Primary Function:
+         Stops Spam.
+
+Feature: StopForumSpam.com Blacklist Registration/Login Blocker!
+         (ini setting / Default: on) Check to see if IP of attempt to
+         register is associated with a known forum/comment spammer.
+         Allows read-only access. Primary Function: Stops Spam.
+
+Feature: TOR Network Registration/Login Blocker! (ini setting / default: on)
+         Block registration or login from the TOR anonymity network. Allows
+         read-only access. Primary Function: Stops Spam.
+
+Feature: TOR Network Access Blocker! (ini setting / default: off) Block all
+         access to protected files from the TOR anonymity network. Primary
+         function: Stops Hacks
+
+
+		 0.4.1 Beta 07/05/09
+
+(a lot can change in a couple days when things work right)
+
+Feature: MORE FLEXIBILITY! Now ZB Block loads configuration from a real
+         live zbblock.ini config file stored in the vault!
+
+Feature: Debug Mode (ini setting). You can now easily find out why a request
+         was blocked by turning this on and resending the request yourself.
+         it will show you what search algorithm, and which pattern caused
+         the hit. Leave off to deter skript kiddies (default off)
+
+Feature: Adjustable Snooze (ini setting). You can now choose either a long,
+         short, or no snooze at all on an attack detection. Setting is in
+         seconds. (default 25 seconds)
+
+Feature: Turn on and off registration timer-trap (ini setting-default on).
+
+Feature: Turn on and off killed_log.TXT logging, and choose if it is stored
+         in the main zbblock (unprotected), vault, or another subdirectory
+         (ini setting-Default: On, vault/).
+
+Feature: Turn on and off killed_log.CSV logging, and choose if it is stored
+         in the main zbblock (unprotected), vault, or another subdirectory
+         (ini setting-Default: Off, vault/).
+
+Feature: Super-Debug mode. Uncomment 2 lines near the top of the script to
+         expose any and all errors occuring.
+
+Bugfix: Thanks to Super-Debug, all former non-fatal but annoying errors have
+        been finally fixed.
+
+
+0.4.0 Beta 07/04/09 (Independence Day)
+
+Feature: Comma Seperated Values (.CSV) output of logs.
+
+Feature: New detection algorithm minmatch, can sniff more accurately for
+         nested attacks, as it checks to see if occurences of a string
+         have gone over the maximum allowed in a request.
+
+Bugfix: Removed troublesome $loaded and $loaded2 variables, as these were
+        never used, and tend to not be standard across platforms/servers.
+
+		
+0.3.1 Beta 04/07/09
+
+Bugfix: Installer would generate errors trying to delete old installer
+        files, on new install. Checks for old files before attempting
+        delete.
+
+
+0.3.0 Beta 04/05/09 
+
+Feature: Now has an installer! Just load zbblock/setup.php in your
+         browser, follow instructions. YAY! :D
+
+Security Fix: Post data removed from log. Possible password exposure.
+
+Security Fix: Filename removed from log. Possible path structure exposure.
+
+Change: "Forwarding Hell" deprecated and removed. ZB Block is about
+         security, not revenge.
+
+Change: Anti-Flooding pause extended to 25 seconds.
+
+Change: Code cleaned for efficiency.
+
+
+0.2.0 Beta 02/25/09
+
+New site, new semi-major version!
+
+BugFix: Now can be run several times on the same page, due to accidental
+        includes and such, without throwing an error. Will quickly skip
+        over itself if it has run before.
+
+Feature: Deeper Detections. Now strips the query string down to the base
+         elements. No more cloaking with %## !
+
+Feature/Change: Now throws an authentic 403 with a descriptive error
+                message by default, rather than forwarding hell. Still
+                has a wait to slow some robots down.
+
+
+0.1.8 Beta 01/07/09 
+
+Sorry, didn't mean to release a new update so soon! Necessary because
+signature file has added "stuff" in it. Next update of program
+(bar hotfixes) will be in Feb. (It's beginning to eat my life!) 
+
+Feature: Added ability to check user agent (though I doubt the utility of
+         this due to cloaking).
+         ((NOTE: Turned out to be quite handy by version 0.4.0!))
+
+Feature: Added ability to check POST data (though I doubt the utility of
+         this due to most skiddy scripts don't use POST). 
+
+Feature: Added serial # counter, stored in vault. 
+
+Change : Changed several checks of $_SERVER['HOME'] to a single check that
+         can be replaced by a static value, in the case of some odd server
+         packages that alter $_SERVER['HOME']. Now stored in
+         $path_to_httproot . Will eventually be loaded from a semi permanent
+         config file. 
+
+		 
+0.1.7 Beta 12/28/08
+
+Feature: Added score ouptut in case of multiple matches. 
+
+Feature: Now lists all reasons for blocking each attack. 
+
+Feature: Placed signatures in locked /vault/ (with .htaccess and .htpasswd) 
+
+Feature: Added custom signature file in /vault/ so you need not put back in 
+         your custom blocks each time you update main signatures. 
+
+
+0.1.6 Beta 11/28/2008
+Feature: Added detection of $_SERVER['PATH_INFO'] . Allows for smarter
+         detection of (evil) remote file includes. Also allows for rejection
+         of client on sites that have no use for path_info. 
+
+
+0.1.5 Beta 11/22/08
+Feature: Added promised IP range blocking, which signifigantly shrank the
+         signature file, and speeded processing. 
+
+
+0.1.2 thru 0.1.4
+
+Inhouse experiments and other dead-ends.
+
+
+0.1.1 Beta 11/12/08 
+
+Feature: Added reason for blocking to output file. 
+
+Speedup: Tightened some variable reading code. (Read system variables once,
+         string to lower from them) 
+
+Removed: Redundant String Length function in inmatch. 
+
+
+0.1.0 Beta 11/08/08 
+
+First Public Beta
