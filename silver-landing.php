@@ -33,17 +33,18 @@ include("./include/config.inc.php");
     </div>
     <!--BANNER AREA START-->
 
-        <div class="container container-banner">
-            <div class="banner" id="banner">
-                <div class="banner01"><div id="fadeshow1"></div></div>
-                <div class="banner01"><div id="fadeshow2"></div></div>
-                <div class="banner01"><div id="fadeshow3"></div></div>
-                <div class="banner01"><div id="fadeshow4"></div></div>
-                <div class="banner01"><div id="fadeshow5"></div></div>
-                <div class="banner01"><div id="fadeshow6"></div></div>
-                <div class="banner01"><div id="fadeshow7"></div></div>
-            </div>
+    <div class="container container-banner">
+        <div class="banner" id="banner">
+            <div class="banner01"><div class="fadeshow" id="fadeshow1"></div></div>
+            <div class="banner01"><div class="fadeshow" id="fadeshow2"></div></div>
+            <div class="banner01"><div class="fadeshow" id="fadeshow3"></div></div>
+            <div class="banner01"><div class="fadeshow" id="fadeshow4"></div></div>
+            <div class="banner01"><div class="fadeshow" id="fadeshow5"></div></div>
+            <div class="banner01"><div class="fadeshow" id="fadeshow6"></div></div>
+            <div class="banner01"><div class="fadeshow" id="fadeshow7"></div></div>
+
         </div>
+    </div>
 
     <!--BANNER AREA END-->
 
@@ -586,20 +587,68 @@ include("./include/config.inc.php");
             <div class="row">
                 <h2><span>TESTIMONIALS</span></h2>
 
-                <div class="carousel slide" data-ride="carousel" id="carousel-example-generic2">
-                    <!--iff want to remove caraousal delete from here--><!-- Indicators --><!-- Wrapper for slides -->
+                <div class="carousel slide" data-ride="carousel" id="carousel-example-generic3">
+                    <!--iff want to remove caraousal delete from here--><!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#carousel-example-generic3"></li>
+                        <li data-slide-to="1" data-target="#carousel-example-generic3"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+
                     <div class="carousel-inner">
                         <div class="item active">
                             <div class="col-md-6">
                                 <div class="testi-msg">
-                                    <p>I&#39;m a diabetic who has been overweight most of my life and has suffered with
-                                        bowel incontinence since becoming obese. From the first time I worked with
-                                        Anthony he started educating me about nutrition &amp; diabetes and I was amazed
-                                        to learn that I held so many myths about nutrition in general. If I had not been
-                                        educated by Anthony, I would still be going down the wrong path wondering why my
-                                        conditions and weight weren&#39;t getting any better. Anthony really opened my
-                                        eyes about the connections between nutrition, beating diabetes and living a
-                                        healthier, more enjoyable life.</p>
+                                    <p>Working with Anthony was a pleasure. I could tell he had been doing this for
+                                        a long time. He looked at my situation and started making suggestions right
+                                        away. Simply, I started doing what he said and it worked! I developed a new
+                                        way of eating whereby I was not hungry, did not feel deprived, and started
+                                        losing weight. As I&#39;ve continued to do what he said, I continue to keep
+                                        the weight off and feel very content with my new eating pattern. For the
+                                        first time in years I feel like my chances of getting cancer are down and
+                                        that my knees &amp; back are finally on the mend. Thanks Anthony!</p>
+                                </div>
+
+                                <div class="test-cntct"><img alt="user1" class="img-rounded"
+                                                             src="images/testimg-1.png"/>
+                                    <blockquote>
+                                        <p>LEAH. D</p>
+                                        <span>Ithaca, NY</span></blockquote>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="testi-msg">
+                                    <p>Anthony was very professional. I was hesitant to get help with my
+                                        condition because I didn’t want someone criticizing my behaviors and
+                                        telling me I should do this and that when I really didn’t want to.
+                                        Anthony focused our time and efforts on creating a mutually agreeable
+                                        strategy whereby we put together nutrition and behavioral plans that
+                                        kept me focused from the beginning of our time together. In the past I
+                                        jumped from trying one idea to trying another without ever stayed
+                                        focused. Anthony kept me very focused – that was the ultimate key to my
+                                        success!</p>
+                                </div>
+
+                                <div class="test-cntct"><img alt="user1" class="img-rounded"
+                                                             src="images/testimg-1.png"/>
+                                    <blockquote>
+                                        <p>Sam C.</p>
+                                        <span>West Islip, NY</span></blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-6">
+                                <div class="testi-msg">
+                                    <p>I&#39;m a diabetic who has been overweight most of my life and has suffered
+                                        with bowel incontinence since becoming obese. From the first time I worked
+                                        with Anthony he started educating me about nutrition &amp; diabetes and I
+                                        was amazed to learn that I held so many myths about nutrition in general. If
+                                        I had not been educated by Anthony, I would still be going down the wrong
+                                        path wondering why my conditions and weight weren&#39;t getting any better.
+                                        Anthony really opened my eyes about the connections between nutrition,
+                                        beating diabetes and living a healthier, more enjoyable life.</p>
                                 </div>
 
                                 <div class="test-cntct"><img alt="user1" class="img-rounded"
@@ -628,6 +677,7 @@ include("./include/config.inc.php");
                                 </div>
                             </div>
                         </div>
+
                         <!-- Controls --></div>
                     <!--till here--></div>
             </div>
@@ -682,6 +732,15 @@ include("./include/config.inc.php");
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
 <script>
+    $(document).ready(function () {
+
+        $('#carousel-example-generic3').carousel({
+            interval: 45000
+        });
+        $('#carousel-example-generic2').carousel({
+            interval: 45000
+        });
+    });
     $('.bxslider').bxSlider({
         adaptiveHeight: true,
         auto: true,

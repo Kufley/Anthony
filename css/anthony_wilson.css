@@ -712,10 +712,10 @@ ul.meetanthony_list li {
 	color: #470964;
 	width: 100%;
 	font-size: 18px;
-	/*float: left;*/
 	font-family: 'Abel', sans-serif;
 	font-weight: bold;
-	padding: 23px 0 19px 20px;
+	padding: 0 0 19px 0;
+	text-align: center;
 }
 #starter_programs {
 	width: 653px !important;
@@ -896,10 +896,7 @@ ul.meetanthony_list li {
 	color: #652084;
 	text-decoration: underline;
 }
-behavior_col1_align a:hover {
-	color: #652084;
-	text-decoration: none;
-}
+
 .behavior_col1_align p {
 	text-decoration: none;
 	font-size: 12px;
@@ -2332,6 +2329,11 @@ img.popup_weightarticle1 {
 	align-items: center;
 }
 .margin-top-20{margin-top: 20px}
+.margin-top_-20{margin-top: -20px !important}
+.font-26{font-size: 26px}
+.font-21{font-size: 21px; margin-top: -10px}
+.bottom-20{margin-bottom: 20px !important;}
+.list-unstyled2 li:nth-child(3n){margin-bottom: 20px}
 @media (max-width:992px){
 	/*.contact_name_field.phone_field{display: flex; justify-content: space-between}*/
 	.phone_field input,.phone_field #phone1{width: 31.9% !important;}

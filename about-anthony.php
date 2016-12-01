@@ -1,126 +1,254 @@
-<?php if (file_exists($_SERVER['DOCUMENT_ROOT'].'/zblock/zbblock.php')) require($_SERVER['DOCUMENT_ROOT'].'/zblock/zbblock.php'); ?>
+<?php if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/zblock/zbblock.php')) require($_SERVER['DOCUMENT_ROOT'] . '/zblock/zbblock.php'); ?>
 <?php
 require_once('include/mainConnect.php');
-require_once($config['absolute_path'].'classes/main.php');	
-include('includes/header.php') ;?>
+require_once($config['absolute_path'] . 'classes/main.php');
+include('includes/header.php'); ?>
 
 <!--CONTENT AREA START-->
 
 <div class="content_area">
-<div class="med_area" >
-  <div class="med_arealeft width-100">
-    <div class="meetanthony_area">
-      <div class="registered_area_second">
-        <div class="inner_hed_second" > Anthony Wilson, RD, MS &ndash; Dietitian, Therapist </div>
-      </div>
-      <div class="meetanthony_left size_32">
-        <div class="meetanthony_top"> <img src="images/anthony_small.jpg" alt="anthony_small" title="Anthony" /> </div>
-      </div>
-      <div class="meetanthony_right size_67">
-        <div class="executiveweight_text">
-          <p> My name is Anthony Wilson and I'm a Registered Dietitian Nutritionist (RD/RDN) and Behavior Therapist. </p>
-          <p> I have a Bachelor's Degree in the Nutritional Sciences from Cornell University, a Master's Degree in Behavioral & Sport Psychology from Ithaca College, and completed a mandatory 1-year Dietetic Internship through Oakwood University and Cayuga Medical Center.</p>
-          <p>Over the past 15 years I have successfully facilitated many diabetic & non-diabetic individuals with overcoming their obstacles and attaining their desired body weight.</p>
+    <div class="med_area">
+        <div class="med_arealeft width-100">
+            <div class="meetanthony_area">
+                <div class="registered_area_second">
+                    <div class="inner_hed_second">Anthony Wilson, Registered Dietitian Nutritionist, Behavior Therapist,
+                        RD,MS
+                    </div>
+                </div>
+                <div class="meetanthony_left size_32 width-25">
+                    <div class="meetanthony_top"><img src="images/free_time_big.jpg" alt="free_time" title="Free Time"/>
+                    </div>
+                </div>
+                <div class="meetanthony_right size_67">
+                    <div class="executiveweight_text">
+                        <p> My name is Anthony Wilson and I'm a Registered Dietitian Nutritionist (RD/RDN) and Behavior
+                            Therapist. I have a Bachelor's Degree in Nutrition from Cornell University, a Master's
+                            Degree in Behavioral & Sport Psychology from Ithaca College, and completed a mandatory
+                            1-year Dietetic Internship through Oakwood University and Cayuga Medical Center. My
+                            experience includes working at hospitals, colleges, universities, eating disorders clinic, a
+                            nationally recognized health coaching company, and private practice. Some areas of nutrition
+                            I've worked in include weight management, eating disorders, bariatric surgery, sports
+                            performance and medical nutrition therapy such as diabetes, gastrointestinal issues, heart
+                            disease, kidney disease and more. </p>
+                        <p> Even with all
+                            of my education and experience, why should <span class="underline">you</span> care about
+                            what I have to say? Because before
+                            becoming aRegistered Dietitian Nutritionist, for <span class="underline">YEARS</span> I
+                            seriously struggled to keep my belly
+                            fat and weight in check. Therefore, I think it'sfair to say...</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="meetanthony_area">
+                <div class="registered_area_second">
+                    <div class="inner_hed_third"><b>I'VE BEEN IN YOUR SHOES & THIS IS WHAT I'VE LEARNED!</b></div>
+                </div>
+                <div class="executiveweight_text">
+                    <img src="images/experience.jpg" class="float-left" alt="experience" title="Experience"/>
+                    <ul>
+                        <li>I gained weight when I ate the smallest number of meals per day.</li>
+                        <li>I gained weight during the weeks and months when my caloric intake was at its lowest
+                            followed by my usual caloric intake.
+                        </li>
+                        <li>I gained weight when I ate the greatest number of calories per week – no surprise there.
+                            (going over caloric limit)
+                        </li>
+                        <li class="bottom-20">I gained vast amounts of belly fat when I consumed sugary liquids which
+                            were high in 'high
+                            fructose corn syrup' (ie: soda)
+                            even when I didn't go over my daily caloric intake.
+                        </li>
+                        <li>I didn't gain any weight when I ate most of my calories at night, as surprising as that may
+                            seem to many people.
+                        </li>
+                        <li>I didn't gain any weight when I ate numerous foods on a regular basis that were high in
+                            sugar,
+                            so long as it was not high fructose corn syrup sugar, as surprising as that may seem to many
+                            people.
+                        </li>
+                        <li class="bottom-20">So long as I didn't go over my caloric limit for the day, I didn't gain
+                            any weight no matter
+                            what
+                            type of foods I ate EXCEPT for high fructose corn syrup.
+                        </li>
+                        <li>I didn't need to go on a "special diet" to get back to my usual (healthy) weight after
+                            having gained a lot of belly fat and weight.
+                        </li>
+                        <li>Losing the last 10-15 pounds were the most difficult pounds to lose - no surprise there.
+                        </li>
+                        <li>I would never undergo bariatric surgery because it largely takes away one of life's greatest
+                            pleasures - eating!
+                        </li>
+
+                        <li>I can still eat all of my favorite foods each week and still maintain my weight.</li>
+                        <li class="bottom-20">Nothing is better for staying motivated to keep my NEW healthy weight in
+                            check than living
+                            with six-pack abs or just a lean physique !
+                        </li>
+                    </ul>
+                    <img src="images/struggles.jpg" class="float-left" alt="experience" title="Experience"/>
+
+                    <ul class="list-unstyled">
+
+                        <li>Skipping meals was one of the biggest mistakes I ever made with my weight – it led to
+                            numerous problems.
+                        </li>
+                        <li>When I increased the total number of meals/snacks per day, <span
+                                class="underline">without </span>going over my caloric limit for the
+                            day, I lost weight more easily.
+                        </li>
+                        <li>When I ate more foods with natural sugar, like fruit, I lost
+                            most of my desire for foods with artificial sugar, like candy.
+                        </li>
+                        <li class="bottom-20">Writing my food intake in a food
+                            log each day was one of the most important things I did to lose my belly fat and
+                            maintain
+                            my weight.
+                        </li>
+                        <li>Drinking good tasting water with zero calories instead of drinking caloric beverages
+                            like juice or soda was one of the best and smartest things I did to decrease my caloric
+                            consumption.
+                        </li>
+                        <li>I learned how to cook simple, fast meals and now I love to cook!</li>
+                        <li>My overall confidence level went down when I had a lot of belly fat and it went to its
+                            highest when I had
+                            six­pack abs!
+                        </li>
+                        <li class="bottom-20">Depression makes getting and staying motivated much, much harder to do; I
+                            didn't
+                            lose any weight during this time because I didn't eat enough meals and my metabolism
+                            plummeted.
+                        </li>
+                    </ul>
+                    <img src="images/waistline.jpg" class="float-left" alt="end_result" title="End Result">
+                    <ul class="list-unstyled">
+                        <li>Success at the <span class="underline">beginning</span> of my weight loss journey was
+                            <span class="underline">critical</span> for my long­term success; it got
+                            me really motivated to keepgoing and feel like I could reach my exact goal!
+                        </li>
+                        <li>An excellent
+                            support system, a healthy environment, planning ahead, accurate nutrition information
+                            and
+                            staying motivated are keys to success!
+                        </li>
+                        <li class="bottom-20">Unless you identify what your obstacles are, as well as
+                            why they exist, creating a successful weight loss plan becomes very difficult, if not
+                            impossible.
+                        </li>
+                        <li>I was an emotional eater and ate to take myself out of a stressed, negative state of mind
+                            and put myself into a more relaxed, positive state of mind, and gained a lot of belly fat in
+                            the process!
+                        </li>
+                        <li>When you are ravenously hungry you tend to make very poor food choices, such as
+                            choosing high­sugar, high­fat, high­calorie foods, as well as over­indulging on them.
+                        </li>
+                        <li class="bottom-20"> If you plan ahead with your meals and snacks and then find yourself short
+                            on time, you'll
+                            find that you can maintain your healthy eating without difficulty.
+                        </li>
+                        <li>I have a sweet­tooth and I satisfy it when I need to without ever gaining any belly fat or
+                            weight!
+                        </li>
+                        <li>Individuals who are overweight and individuals with eating disorders who are very thin have
+                            a lot in common.
+                        </li>
+                        <li>Staying out of a food­rich environment is key!</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="meetanthony_area">
+                <div class="registered_area_second">
+                    <div class="inner_hed_four"><b>HOW I CAN HELP <span class="underline">YOU!</span></b></div>
+                </div>
+
+
+                <div class="executiveweight_text">
+                    <img src="images/end_result.jpg" class="float-left" alt="struggles">
+                    <ul>
+                        <li>You will have all of your questions answered during your FREE­CONSULTATION and find out if I
+                            think the Dream WeightCoaching Program is exactly what you need for success!
+                        </li>
+                        <li>You will receive
+                            the same nutrition and behavioral strategies that have helped all of the overweight
+                            individuals
+                            that I have worked with in the past!
+                        </li>
+                        <li class="bottom-20">You will learn everything you need to know to be able to
+                            get to a healthy weight and maintain it for life!
+                        </li>
+                        <li>You will learn how to get into the right
+                            frame of mind for what you are about to accomplish so that you can get off to the
+                            right start!
+                        </li>
+                        <li>You will be held accountable!</li>
+                        <li class="bottom-20">You will learn what the underlying root causes of your weight
+                            issues are and how you can overcome them so they don'tundermine your weight loss journey!
+                        </li>
+
+                        <li>You will learn to create daily, weekly and long­term goals!</li>
+                        <li>You will receive a plan you can follow
+                            which outlines and targets exactly what you'll need to do to accomplish your goals now in a
+                            way
+                            where you can eat without feeling any deprivation at all!
+                        </li>
+                        <li class="bottom-20">You will start learning behavioral
+                            therapy techniques that you can use to empower yourself which will facilitate you with
+                            your goals!
+                        </li>
+                        <li>You will receive my eating disorders knowledge and experience to help you overcome
+                            any fears you might have tow ards eating and gaining weight!
+                        </li>
+                        <li>You will learn how to fuel your body
+                            before and after your workouts so that you can burn the maximum number of calories each
+                            workout!
+                        </li>
+                        <li>If you are diabetic you will learn how to deal with your diabetes and eventually overcome it
+                            without surgery!
+                        </li>
+                        <li>You'll receive recipes and meals targeted for your preferences!</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="meetanthony_area">
+                <div class="registered_area_second">
+                    <div class="inner_hed_four"><b>WHAT ELSE YOU CAN EXPECT FROM ME:</b></div>
+                </div>
+                <div class="executiveweight_text">
+                    <img src="images/anthony_small.jpg" alt="anthony_small" class="float-left" title="Anthony">
+                    <ul class="list-unstyled">
+                        <li>Professionalism ­ always!</li>
+                        <li>24/7 support!</li>
+                        <li>The highest level of weight management expertise!</li>
+                        <li>The utmost of concern and dedication for you, your unique situation, and your personal needs
+                            and desires!
+                        </li>
+                        <li>Thoroughness!</li>
+                        <li>Committment to working together and creating a nutrition and behavioral prescription that
+                            yields lifetime success!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
         </div>
-      </div>
     </div>
-    <div class="meetanthony_area">
-      <div class="registered_area_second">
-        <div class="inner_hed_third"  > Experience </div>
-      </div>
-      <div class="meetanthony_left size_32">
-        <div class="meetanthony_top" > <img src="images/experience.jpg" alt="experience" title="Experience" /> </div>
-      </div>
-      <div class="meetanthony_right size_67">
-        <div class="executiveweight_text">
-          <p>My vast experiences attained as a Registered Dietitian, Nutrition Therapist and Behavior Therapist have come about as a result of working at: </p>
-          <ul >
-            <li>Colleges, universities and hospitals</li>
-            <li>Medical doctor's offices</li>
-            <li>A nationally recognized health coaching company</li>
-            <li>Working privately with individuals for weight management, eating
-              disorders, bariatric surgery, sports performance & medical nutrition therapy (ie: diabetes, gastrointestinal issues, heart disease, kidney disease, etc).</li>
-          </ul>
-          <p> The experience and knowledge I have gained over the years have enabled me to assist individuals with accomplishing their weight loss and wellness goals.</p>
-          <p>My educational background in both Nutrition and Behavioral Psychology have given me tremendous insight into helping individuals identify and then eliminate the true causes of their weight loss struggles. </p>
-          <p>I have learned that unless individuals identify what their obstacles are, as well as why they exist, creating a successful weight loss plan becomes very difficult if not impossible.</p>
-        </div>
-      </div>
-    </div>
-    <div class="meetanthony_area" >
-      <div class="registered_area_second" >
-        <div class="inner_hed_four" > My struggles with weight </div>
-      </div>
-      <div class="meetanthony_left size_32">
-        <div class="meetanthony_top"> <img src="images/struggles.jpg" alt="struggles" title="My struggles with weight" /> </div>
-      </div>
-      <div class="meetanthony_right size_67">
-        <div class="executiveweight_text">
-          <p>Throughout high school I was always very thin and had the luxury of eating anything I wanted and as much of it as I liked without ever having to be concerned with gaining weight.</p>
-          <p>However, when I started Cornell University about 10 years later, that wasn&rsquo;t the situation anymore. In the following years at Cornell I started to struggle with keeping my waistline in check. </p>
-          <p>Before I knew it my pants size had gone from a 31 to a 36 and my midsection was unsightly to say the least. I never thought the day would come when I would be hording belly fat, but the day had finally arrived. </p>
-        </div>
-      </div>
-    </div>
-    <div class="meetanthony_area">
-      <div class="registered_area_second">
-        <div class="inner_hed_four"> Why was my waistline growing? </div>
-      </div>
-      <div class="meetanthony_left size_32">
-        <div class="meetanthony_top"> <img src="images/waistline.jpg" alt="waistline" title="Why was my waistline growing?" /> </div>
-      </div>
-      <div class="meetanthony_right size_67">
-        <div class="executiveweight_text">
-          <p>My increase in belly fat was occurring for numerous reasons. As a college student at Cornell I often felt very stressed and for myself like many others who are stressed, my instinct was to eat foods that tasted good and that would take me out of this negative, stressed state of mind and move me into a more positive and relaxed one. </p>
-          <p>So to accomplish this when I was stressed I would often eat sugary, fatty, high calorie, high glycemic index foods to make myself feel better. And to some extent, it worked. Unfortunately, I continued with this behavior and continued to struggle with my waist size. Simply, I had become an &quot;emotional eater&quot;.</p>
-          <p>In addition to being an emotional eater, while a college student I often found myself short on time in which case I would regularly skip meals. But soon after, I would become ravenously hungry and try to find a vending machine or head over to the campus bookstore to get some ready&ndash;to&ndash;eat foods. </p>
-          <p> Because I was so hungry and didn't feel mentally sharp as a result, I would make poor food choices and then over-indulge on the sugary, fatty foods that I had just purchased. This served to compound my problem with my waistline.</p>
-          <p>&quot;Interestingly enough, one of the best things about being a student at Cornell is the food! Being on the meal plan as I was, I had daily access to a smorgasbord of just about every type of food you could imagine, including desserts.</p>
-          <p> I could eat as many cheeseburgers and fried onion rings as I wanted to every night, and follow it with freshly baked delicious cakes and cookies. And I often did! Again, this just added more fat to my already growing belly.&quot;</p>
-          <p> And to add insult to injury, if eating poorly due to feeling excessively stressed and running short on time weren&rsquo;t bad enough, I&rsquo;m someone who has always had a &quot;sweet&ndash;tooth&quot;.</p>
-        </div>
-      </div>
-    </div>
-    <div class="meetanthony_area">
-      <div class="registered_area_second">
-        <div class="inner_hed_third"> End result </div>
-      </div>
-      <div class="meetanthony_left size_32">
-        <div class="meetanthony_top"> <img src="images/end_result.jpg" alt="end_result" title="End Result" /> </div>
-      </div>
-      <div class="meetanthony_right size_67">
-        <div class="executiveweight_text">
-          <p>My issues with belly fat for years was in large part due to emotional eating, eating poorly due to a lack of time and energy, having too much access to high calorie foods, and letting my &lsquo;sweet-tooth&rsquo; get the best of me. </p>
-          <p>It wasn&rsquo;t until I became a Registered Dietitian and started getting hands-on experience with overweight and eating disorders individuals that I started to change my behaviors. </p>
-          <p>After I created my own &quot;recipe-for-success&quot;, I soon started making more intelligent food choices, watched my belly fat disappear, and went back to my normal pants size.</p>
-        </div>
-      </div>
-    </div>
-    <div class="meetanthony_area">
-      <div class="registered_area_second">
-        <div class="inner_hed_four"> Free time </div>
-      </div>
-      <div class="meetanthony_left size_32">
-        <div class="meetanthony_top"> <img src="images/free_time.jpg" alt="free_time" title="Free Time" /> </div>
-      </div>
-      <div class="meetanthony_right size_67">
-        <div class="executiveweight_text">
-          <p>When not working with clients, I really enjoy working out at the gym with weights and the spinning bike, as well as spending time at home with my German Shepherd. </p>
-          <p>When it comes to food, eating is one of my favorite activities &ndash; I LOVE to eat! Italian food is my favorite type of cuisine, eggplant parmigiana and lasagna are two of my favorite foods, while yogurt with fresh fruit is my favorite snack. </p>
-          <p>I truly believe that any food can be part of a healthy diet!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="question"><a href="http://www.weightlosshappens.com/">Back to Homepage</a></div>
-  <!--<div class="question"> Questions? <span><a href="contactus.php">Contact Anthony</a></span> --><!-- or email <span><a href="mailto:Anthony@WeightLossHappens.com">Anthony@WeightLossHappens.com</a></span> --> 
-  <!-- </div>--> 
+    <div class="question"><a href="http://www.weightlosshappens.com/">Back to Homepage</a></div>
+    <!--<div class="question"> Questions? <span><a href="contactus.php">Contact Anthony</a></span> -->
+    <!-- or email <span><a href="mailto:Anthony@WeightLossHappens.com">Anthony@WeightLossHappens.com</a></span> -->
+    <!-- </div>-->
 </div>
 
-<!--CONTENT AREA END--><script type="text/javascript">
-//alert('hi'); 
-$('#about_anthony').addClass("current");
+<!--CONTENT AREA END-->
+<script type="text/javascript">
+    //alert('hi');
+    $('#about_anthony').addClass("current");
 
 </script>
-<?php include('includes/footer.php') ;?>
+<?php include('includes/footer.php'); ?>

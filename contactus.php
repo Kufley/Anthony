@@ -107,8 +107,7 @@ if (isset($_POST['submit']) && $_POST['submit'] != '' && $_POST['submit'] == 'su
       </div>
       <div class="contact_box">
         <div class="contact_box_first_line" style="  margin:5px 0px 0px 5px;" >Anthony Wilson <span >RD, MS</span> </div>
-        <div class="contact_box_second_line"  style="  margin:0px 0px 2px 5px;">West Islip, NY - 11795</div>
-        <div class="contact_phone_box" style="  margin:0px 0px 2px 5px;"> 
+        <div class="contact_phone_box" style="  margin:0px 0px 2px 5px;">
           <!-- <div class="contact_phone_text" >Phone: 631.336.6153</div>--> 
         </div>
         <!--end contact_phone_box-->

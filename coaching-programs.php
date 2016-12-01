@@ -19,9 +19,9 @@ include('includes/header.php') ;
       </div>
       <div class="meetanthony_right">
         <div class="executiveweight_text text-center">
-          <p>The program is designed for the client who seeks the professional guidance they really need and desire!</p>
-          <p>You want a personalized weight management blueprint that is tailored to your needs and goals, which produces hard core results and eliminates guesswork! </p>
-          <p>Whether you have 10# or 210# to lose, I will personally see to it that you get the guidance, motivation and accountability that will enable you to reach your desired body weight and accomplish all of your health and wellness goals! </p>
+          <p><b>The program is designed for the client who seeks the professional guidance they really need and desire!</b></p>
+          <p><b>You want a personalized weight management blueprint that is tailored to your needs and goals, which produces hard core results and eliminates guesswork!</b> </p>
+          <p><b>Whether you have 10# or 210# to lose, I will personally see to it that you get the guidance, motivation and accountability that will enable you to reach your desired body weight and accomplish all of your health and wellness goals!</b> </p>
         </div>
       </div>
     </div>
@@ -76,7 +76,13 @@ include('includes/header.php') ;
     <!--Stage Area end--> 
   </div>
    <div class="prize-table">
-    <div class="programs_below">Please choose one of the programs below that best fits you, and let&rsquo;s get started!</div>
+     <div>
+       <div class="programs_below">Please choose one of the programs below that best fits you, and let&rsquo;s get
+         started!</div>
+         <div class="programs_below font-26">CREATE YOUR OWN PROGRAM!!</div>
+         <div class="programs_below font-21">Use your hours on the areas you want to use them on!</div>
+
+     </div>
     <div class="stages_area new_page">
       <div class="stages_main">
         <div class="stages_rowarea1">

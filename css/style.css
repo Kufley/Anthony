@@ -90,7 +90,7 @@ html * {
 }
 .banner-description {
 	text-align: center;
-	position:static
+	position:static;
 	left: 0px;
 	top: 30%;
 	width: 100%;
@@ -123,11 +123,11 @@ html * {
 }
 .bx-prev {
 	left: 0px;
-	background: url(../images/left-arrow.png) left center no-repeat rgba(0,0,0,0.5);
+	/*background: url(../images/left-arrow.png) left center no-repeat rgba(0,0,0,0.5);*/
 }
 .bx-next {
 	right: 0px;
-	background: url(../images/right-arrow.png) right center no-repeat rgba(0,0,0,0.5);
+	/*background: url(../images/right-arrow.png) right center no-repeat rgba(0,0,0,0.5);*/
 }
 #main-content {
 	background: #ecf2f5;
@@ -242,7 +242,7 @@ html * {
 	padding: 20px;
 }
 .testimonial .test-cntct {
-	background: url("../images/testiarrow.png") no-repeat scroll left 15px top rgba(0, 0, 0, 0);
+	/*background: url("../images/testiarrow.png") no-repeat scroll left 15px top rgba(0, 0, 0, 0);*/
 	padding-left: 11px;
 	padding-top: 40px;
 	position: relative;
@@ -275,7 +275,7 @@ html * {
 	background: #335998;
 	border-radius: 5px;
 	padding: 20px;
-	min-height:195px
+	min-height: 248px
 }
 .testimonial .carousel {
 	padding-bottom: 50px;
@@ -398,38 +398,48 @@ font-size:30px
 .display-block{display: block}
 .display-none{display: none}
 .banner {
-	width: 962px;
+
 	height: 175px;
 	margin: 0 auto;
 }
-#fadeshow1 {
-	width: 120px;
-	height: 160px;
+.fadeshow {
+width: 150px;
+height: 160px;
 }
-#fadeshow2 {
-	width: 120px;
-	height: 160px;
+.fadeshow img{
+width: 100%;
+
 }
-#fadeshow3 {
-	width: 120px;
-	height: 160px;
-}
+
+
+/*#fadeshow1 {*/
+	/*width: 145px;*/
+	/*height: 160px;*/
+/*}*/
+/*#fadeshow2 {*/
+	/*width: 145px;*/
+	/*height: 160px;*/
+/*}*/
+/*#fadeshow3 {*/
+	/*width: 145px;*/
+	/*height: 160px;*/
+/*}*/
 #fadeshow4 {
 	width: 240px;
 	height: 160px;
 }
-#fadeshow5 {
-	width: 121px;
-	height: 160px;
-}
-#fadeshow6 {
-	width: 121px;
-	height: 160px;
-}
-#fadeshow7 {
-	width: 120px;
-	height: 160px;
-}
+/*#fadeshow5 {*/
+	/*width: 145px;*/
+	/*height: 160px;*/
+/*}*/
+/*#fadeshow6 {*/
+	/*width: 145px;*/
+	/*height: 160px;*/
+/*}*/
+/*#fadeshow7 {*/
+	/*width: 145px;*/
+	/*height: 160px;*/
+/*}*/
 .banner01 {
 	float: left;
 	margin: 0;
@@ -442,6 +452,18 @@ font-size:30px
 @media (max-width:1199px){
 	.testi-msg {
 		min-height: 230px;
+	}
+	.banner {
+		height: 168px;
+		margin: 0 auto;
+	}
+	.fadeshow {
+		width: 116px;
+		height: 160px;
+	}
+	#fadeshow4 {
+		width: 240px;
+		height: 153px;
 	}
 }
 
