@@ -1147,9 +1147,17 @@ iframe {
     font-weight: bold;
     padding: 0;
     text-align: left;
+    line-height: 32px;
 }
-
-.realize-right p, .way-main p {
+.top-article h3{ background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: rgb(60, 2, 88);
+    line-height: 32px;
+    font-family: 'encode_sansbold';
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+    text-align: left;}
+.realize-right p, .way-main p, .top-article p {
     color: #000;
     font-family: arial;
     font-size: 14px;
@@ -1647,7 +1655,7 @@ iframe {
 .buy a{font-size: 24px; font-weight: normal; text-decoration: underline; color:#4e126a;}
 .underline{text-decoration: underline}
 .float-left{float: left; max-width: 208px;
-    margin: 15px 40px 15px 0;}
+    margin: -26px 40px 15px 0 }
 /*responsive*/
 @media (min-width: 992px) and (max-width: 1200px) {
     .container {
@@ -2054,6 +2062,7 @@ iframe {
 }
 
 @media (max-width: 767px) {
+    .float-left{margin-top: 0 }
     #popupfoot {
         right: 20px !important;
     }

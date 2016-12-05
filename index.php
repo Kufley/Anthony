@@ -395,114 +395,152 @@ include('includes/header.php');
                 <h3>LACK OF PROFESSIONAL GUIDANCE: 10 CONSEQUENCES</h3>
                 <div class="Realize-main lack">
                     <div class="main-relize">
-                        <div class="realize-left"><img src="images/doc-image.png" alt=""></div>
-                        <div class="realize-right">
-                            <h3>LOSS OF MOTIVATION MUCH MORE LIKELY:</h3>
+
+
+                        <img src="images/experience.jpg" class="float-left" alt="">
+                        <div class="top-article">
+                            <h3 class="underline">LOSS OF MOTIVATION MUCH MORE LIKELY:</h3>
                             <p>One of the top motivators that keeps individuals continuing their weight loss journey is
                                 SUCCESS! Simply, working with a professional greatly increases your chances of success
-                                with your weight loss and that initial success will be critical for maintaining
-                                motivation as you move forward down your weight loss path.</p>
-                            <p>This happens for numerous reasons such as when you are working with someone you are aware
-                                that the individual you are working with is counting on you to be successful.</p>
+                                with your
+                                weight loss and this initial success will be critical for maintaining motivation as you
+                                move forward with your weight loss journey. </p>
+                            <p>Staying motivated because of your initial weight loss success can be powerful, however,
+                                this is just one reason why you will stay motivated. Often in a working relationship
+                                your desire is to be successful first and foremost for yourself, as it should be. But
+                                also a part of your motivation to be successful is because you don't want to
+                                let the person assisting you down and this can be very motivating for you - especially
+                                at times when you might otherwise falter. </p>
+                            <p>Additionally, you know that the professional you are working with is going to hold you
+                                accountable. This helps to keep you on your toes and be more inclined to do what's in
+                                your best interests and follow your game plan as best as possible. And because of this,
+                                you will be more successful which again, fuels your motivation over and over!</p>
                         </div>
+
                     </div>
+
+
                     <div class="way-main">
-                        <p>Often in a working relationship your desire is to be successful first and foremost for
-                            yourself, but also, you don't want to let the person assisting you down and that can be very
-                            motivating for you especially at times when you might otherwise falter. Similarly, having
-                            this other person hold you accountable keeps you on your toes and you are more inclined to
-                            do what's in you best interests, and with this, you attain more success which fuels your
-                            motivation very positively!</p>
-                    </div>
-                    <div class="way-main">
-                        <h3>BURNING LESS CALORIES DUE TO DEFICIENT BLOOD WORK:</h3>
+                        <h3 class="underline">BURNING LESS CALORIES DUE TO DEFICIENT BLOOD WORK:</h3>
                         <p>Not being aware of what your blood work is showing and not knowing exactly what you need to
-                            do for it can cost you in terms of weight loss. For instance, when your red blood cell
-                            count, hemoglobin, and iron levels are low, that can have a large negative impact on your
+                            do to improve it can cost you in terms of weight loss. For instance, when your red blood
+                            cell count, hemoglobin, and iron levels are low, that can have a significant impact on your
                             ability to burn calories. </p>
-                        <p>Even though you may have had these tests run previously, they may not have been tested in
-                            some time. Also, your doctor rarely has the time to go over your blood work in depth with
-                            you such as discussing how and why your blood work got low, and exactly what you need to do
-                            to get those levels back to normal and higher.</p>
-                        <p>One of the 1st things I do with clients is discuss recent or brand new blood work. We
-                            determine what must be done to get your deficiencies corrected and then we apply it to your
-                            weight loss plan. </p>
+                        <p>Even though you probably had these tests run previously, they may not have been tested in
+                            some time and the results now may be very different. Also, your doctor rarely has time to go
+                            over your blood work in depth with you such as by discussing how and why your blood work got
+                            low and exactly what you need to do to get those deficient levels back to normal.
+                            Determining what caused these deficient levels is as important as knowing how to get them to
+                            their proper levels. </p>
+                        <p>One of the first things I do with clients is discuss the results of their recent or brand new
+                            blood work. Together, we determine what caused your deficiencies and what must be done to
+                            get them corrected. And then we apply it to your weight loss plan. </p>
                     </div>
                     <div class="way-main">
-                        <h3>SLOWER GAINS DUE TO INACCURATE NUTRITION & WEIGHT LOSS INFORMATION:</h3>
-                        <p>When you don't have accurate nutrition and weight loss information by which to plan your
-                            weight loss journey, you end up making slower gains even though you think you are doing
-                            everything right. Sooner or later you start to struggle to lose any weight. Slower gains are
-                            common when you have inaccurate information and flawed strategies </p>
-                        <p>Consequently, many individuals find themselves starting over numerous times since they don't
-                            have much success due to basing their weight management plan on misinformation and often
-                            times poor planning as well.</p>
+                        <h3 class="underline">SLOWER GAINS DUE TO INACCURATE NUTRITION & WEIGHT LOSS INFORMATION:</h3>
+                        <p>When you don't have accurate nutrition and weight loss facts by which to plan your weight
+                            loss journey upon, you end up making slower gains even though you think you are doing
+                            everything right! Sooner or later you struggle to lose any weight at all. Disappointment and
+                            less motivation with you weight loss goals is common when you have inaccurate information
+                            and flawed strategies. </p>
+                        <p>Consequently, many individuals find themselves starting over again and again since they don't
+                            have much success due to basing their weight management plan on misinformation, and quite
+                            often, a poor strategy. </p>
                     </div>
                     <div class="way-main">
-                        <h3>QUITTING DUE TO A LACK OF FOLLOW-THRU:</h3>
-                        <p>Many individuals have been learning about weight loss for a long time, but ultimately don't
-                            come close to reaching their dream weight due to a lack of follow-through, plain and simple.
-                            This could be due to many reasons such as a lack of knowledge, fear, lack of initial
-                            success, or other reasons. Whatever the reason, follow-through is absolutely necessary for
-                            success! Working with a professional will almost always help you to follow-through. </p>
+                        <h3 class="underline">QUITTING DUE TO A LACK OF FOLLOW-THRU:</h3>
+                        <p>Many individuals have been learning about weight loss for a long time. But ultimately, they
+                            don't come close to reaching their dream weight due to numerous reasons, one of which is,
+                            plain and simply, a lack of follow-through. This could be due to many reasons such as a lack
+                            of accurate knowledge which inhibits success which leads to a loss of motivation. </p>
+                        <p>Or they could have a fear of success or failure, both of which inhibit follow-through. But
+                            also their personal circumstances may be playing a large role and they are not sure how to
+                            navigate through everything and eventually abadon their weight loss journey. </p>
+                        <p>Whatever the reason, follow-through is absolutely necessary for success! Working with a
+                            professional will greatly increase your odds of following through, always! </p>
                     </div>
                     <div class="way-main">
-                        <h3>WEIGHT GAIN, NOT WEIGHT LOSS:</h3>
-                        <p>Weight gain, not weight loss, due to unintentional yo-yo 'dieting' often occurs. Many
-                            individuals start their weight loss plan, but then for one reason or another, stop shortly
-                            thereafter. Unfortunately, the end result is a higher body fat percentage and a slower
-                            metabolism. This is the result of losing muscle and gaining fat mass which happens when you
-                            decrease your caloric intake for a while and then abruptly go back to eating the same number
-                            of calories that you were eating before you started your weight loss plan. </p>
-                        <p>When you make that abrupt change, your metabolism is lower and not expecting to get as many
-                            calories as you used to feed it just a short while ago. So you end up over-consuming
-                            calories during that time. It doesn't seem like you are over-consuming calories because that
-                            is the same number of calories you used to consume.</p>
+                        <h3 class="underline">WEIGHT GAIN, NOT WEIGHT LOSS:</h3>
+                        <p>Weight gain, instead of weight loss, due to "unintentional" yo-yo dieting occurs quite often.
+                            Unfortunately, the end result is a higher body fat percentage and a slower metabolism.
+                            Unintentional “yo-yo dieting” is the result of losing muscle and gaining fat mass which
+                            happens when you decrease your caloric intake for a period of time (for example, 2 weeks)
+                            and then abruptly go back to eating the <i class="underline">same</i> number of calories
+                            that you were eating <i class="underline">before</i>
+                            you started decreasing your caloric intake. </p>
+                        <p>In this case, you think you are eating the correct number of calories, but in actuality, you
+                            are eating too many calories and consequently, you gain fat mass and your weight goes up!
+                            When you make that abrupt change, your metabolism is lower and your body does not require as
+                            many calories as you used to feed it just a short while ago. The end result is that you
+                            over-consume calories and gain fat mass, not muscle, and often, are not aware why. </p>
                     </div>
                     <div class="way-main">
-                        <h3>SLOWER GAINS DUE TO POOR GOAL-SETTING:</h3>
-                        <p>Another top key when it comes to motivation is goal-setting. It is very useful to make daily,
-                            short & long-term goals and to make them in a way that will benefit you the most. Many times
-                            individuals' goal-setting was not created ideally and It doesn't motivate them the way that
-                            it should, if at all. Goal-setting that really motivates helps to keep you focused and
-                            driven especially during difficult times! Effective goal-setting is critical!</p>
+                        <h3 class="underline">SLOWER GAINS DUE TO POOR GOAL-SETTING:</h3>
+                        <p>Another top key to success when it comes to weight loss, and specifically, motivation, is
+                            goal-setting. It is very motivating to make daily, short & long-term goals and to make them
+                            in a way that will benefit you the most. One way to do this is to make “SMART” goals.
+                            “SMART” stands for Specific, Measurable, Adjustable, Realistic, and Timely. Many times
+                            individuals go through the goal-setting process and do not go about it ideally, to say the
+                            least. Subsequently, they find that their goal-setting did not accomplish one of the main
+                            things it was meant to do: MOTIVATE! </p>
+                        <p>Goal-setting that really motivates an individual helps to keep them focused and driven,
+                            especially during difficult times. Therefore, goal-setting is critical for success!</p>
                     </div>
                     <div class="way-main">
-                        <h3>TREMENDOUS FRUSTRATION: </h3>
+                        <h3 class="underline">TREMENDOUS FRUSTRATION: </h3>
                         <p>Not having someone you trust to turn to for advice when you hit obstacles or are unsure about
-                            which is the best way to proceed with something leads to, among other things, tremendous
-                            frustration. And then you guess as to what to do and likely end up being even more
-                            frustrated. This is one of the benefits of working with a trusted professional – you always
-                            have someone to turn to for expert advice! </p>
+                            which is the best way to proceed, leads to, among other things, tremendous frustration.
+                            Additionally, you then guess as to what to do and likely end up being even more frustrated
+                            when things don't turn out as you had hoped they would. </p>
+                        <p>Therefore, one of the benefits of working with a trusted professional is that you always have
+                            someone to turn to for expert advice and guidance. Not only does this help you to be
+                            successful with your goals, but it also helps you to experience much less frustration in the
+                            process!</p>
                     </div>
                     <div class="way-main">
-                        <h3>SLOWER GAINS DUE TO THE BELIEF THAT YOU WILL NOT BE SUCCESSFUL: </h3>
-                        <p>Many individuals trying to lose weight and maintain that weight loss have tried to do so in
-                            the past and have failed. Because of that many have adopted the belief that, as much as they
-                            truly want to lose weight, they won't be successful with losing weight. Ultimately, your
-                            limiting beliefs will affect your actions which will almost definitely have a negative
-                            impact on your food choices and how you forward with your weight loss plan. </p>
+                        <h3 class="underline">SLOWER GAINS DUE TO THE BELIEF THAT YOU WILL NOT BE SUCCESSFUL: </h3>
+                        <p>Many individuals trying to lose weight have tried to do so in the <span class="underline">past</span>
+                            and have failed.
+                            Because of those former failures, these individuals have adopted the belief that they will
+                            not be successful in the <span class="underline">future</span> with losing weight and
+                            maintaining that weight loss. Truly,
+                            they want to lose weight, but don't believe it will ever become a reality. </p>
+                        <p>In other words, they have a very restricting "limiting belief" in regards to their weight
+                            loss goals. Ultimately, your limiting beliefs will affect your actions which will definitely
+                            have a negative impact on how you move forward with your weight loss plan, as well as
+                            whether or not you move forward with it at all. You need to identify your limiting beliefs
+                            and then turn them into empowering beliefs!</p>
                     </div>
                     <div class="way-main">
-                        <h3>SLOWER PROGRESS DUE TO DEFICIENT WEIGHT LOSS PRESCRIPTION: </h3>
+                        <h3 class="underline">SLOWER PROGRESS DUE TO DEFICIENT WEIGHT LOSS PRESCRIPTION: </h3>
                         <p>It's difficult for you to put together your best dietary "prescription" for your weight loss
-                            journey without taking into account your past and current medical conditions, among other
-                            things, and exactly how they factor in. For instance, if you have had your gallbladder
-                            removed you would need to know that you need to consume low fat meals for the rest of your
-                            life or else you will have chronic diarrhea, everyday. </p>
-                        <p>If you have diabetes you would need to know the most successful ways to plan your meals and
-                            snacks which would involve knowing the best ways to control and overcome your diabetes.
-                            Without nutrition and medical training you might be unaware of how to do this which would
-                            slow your progress down.</p>
+                            journey without taking into account, among other things, your past and current medical
+                            conditions and how they factor in. For instance, if you have had your gallbladder removed
+                            you would need to know that you need to consume low fat meals for the rest of your life or
+                            else you will have chronic diarrhea daily. </p>
+                        <p>You might ask, "Even so, how does this factor into my weight loss?" If nothing else, having
+                            diarrhea everyday, for example, will certainly affect what foods you can eat and may play a
+                            role in different ways with you being able to exercise adequately. </p>
+                        <p>Another example would be if you have diabetes. If you have diabetes, you would need to know
+                            the most successful ways to control and overcome your diabetes which would involve being
+                            aware of the best ways to plan your meals, snacks and exercise for the day. Therefore, it is
+                            imperative to work with someone who understands not only “weight loss,” but someone who also
+                            understands what needs to be taken into account when weight loss clients have different
+                            illnesses and diseases . </p>
                     </div>
                     <div class="way-main">
-                        <h3>LESS CALORIES BURNED FROM A WORKOUT:</h3>
-                        <p>Knowing what to eat before and after your workouts is critical so that you can get the most
-                            out of those workouts. Depending on what your goals are for your workouts, your nutrition
-                            prescription will vary. Many individuals base their pre- and post-workouts meals and snacks
-                            on false information and do not consume what will benefit them the most. The poorer your
-                            workout nutrition plan, the less energy you'll have for burning calories during your
-                            workouts.</p>
+                        <h3 class="underline">LESS CALORIES BURNED FROM A WORKOUT:</h3>
+                        <p>Knowing what to eat before and after your workouts is critical if you are to get the most out
+                            of your workouts in terms of calories and cardiovascular benefit. Depending on your workout
+                            goals, your nutrition prescription will vary. For instance, is your goal to build muscle
+                            mass and increase your metabolism, or is your goal to burn calories solely through cardio
+                            work? </p>
+                        <p>Many individuals base their pre- and post-workouts meals and snacks on false information or
+                            no information at all. Consequently, they do not consume the right foods at the right time
+                            before and after workouts, and subsequently, do not get the most out of their workouts.
+                            Simply, the poorer your nutrition workout plan is, the less energy you'll have for burning
+                            calories during your workouts which will lead you to burn less total calories for the
+                            day! </p>
                     </div>
                 </div>
             </div>

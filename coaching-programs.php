@@ -80,7 +80,7 @@ include('includes/header.php') ;
        <div class="programs_below">Please choose one of the programs below that best fits you, and let&rsquo;s get
          started!</div>
          <div class="programs_below font-26">CREATE YOUR OWN PROGRAM!!</div>
-         <div class="programs_below font-21">Use your hours on the areas you want to use them on!</div>
+         <div class="programs_below font-21">Use <span class="underline">your</span> hours on the topics <span class="underline">you</span> want to use them on!</div>
 
      </div>
     <div class="stages_area new_page">

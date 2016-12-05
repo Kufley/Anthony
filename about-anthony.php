@@ -24,7 +24,8 @@ include('includes/header.php'); ?>
                         <p> My name is Anthony Wilson and I'm a Registered Dietitian Nutritionist (RD/RDN) and Behavior
                             Therapist. I have a Bachelor's Degree in Nutrition from Cornell University, a Master's
                             Degree in Behavioral & Sport Psychology from Ithaca College, and completed a mandatory
-                            1-year Dietetic Internship through Oakwood University and Cayuga Medical Center. My
+                            1-year Dietetic Internship through Oakwood University and Cayuga Medical Center.</p>
+                        <p> My
                             experience includes working at hospitals, colleges, universities, eating disorders clinic, a
                             nationally recognized health coaching company, and private practice. Some areas of nutrition
                             I've worked in include weight management, eating disorders, bariatric surgery, sports
@@ -33,9 +34,9 @@ include('includes/header.php'); ?>
                         <p> Even with all
                             of my education and experience, why should <span class="underline">you</span> care about
                             what I have to say? Because before
-                            becoming aRegistered Dietitian Nutritionist, for <span class="underline">YEARS</span> I
+                            becoming a Registered Dietitian Nutritionist, for <span class="underline">YEARS</span> I
                             seriously struggled to keep my belly
-                            fat and weight in check. Therefore, I think it'sfair to say...</p>
+                            fat and weight in check. Therefore, I think it's fair to say...</p>
 
                     </div>
                 </div>
@@ -43,7 +44,7 @@ include('includes/header.php'); ?>
 
             <div class="meetanthony_area">
                 <div class="registered_area_second">
-                    <div class="inner_hed_third"><b>I'VE BEEN IN YOUR SHOES & THIS IS WHAT I'VE LEARNED!</b></div>
+                    <div class="inner_hed_four"><b>I'VE BEEN IN YOUR SHOES & THIS IS WHAT I'VE LEARNED!</b></div>
                 </div>
                 <div class="executiveweight_text">
                     <img src="images/experience.jpg" class="float-left" alt="experience" title="Experience"/>
@@ -52,9 +53,7 @@ include('includes/header.php'); ?>
                         <li>I gained weight during the weeks and months when my caloric intake was at its lowest
                             followed by my usual caloric intake.
                         </li>
-                        <li>I gained weight when I ate the greatest number of calories per week – no surprise there.
-                            (going over caloric limit)
-                        </li>
+                        <li>I gained weight when I ate the greatest number of calories per week – no surprise there.</li>
                         <li class="bottom-20">I gained vast amounts of belly fat when I consumed sugary liquids which
                             were high in 'high
                             fructose corn syrup' (ie: soda)
@@ -68,12 +67,12 @@ include('includes/header.php'); ?>
                             so long as it was not high fructose corn syrup sugar, as surprising as that may seem to many
                             people.
                         </li>
-                        <li class="bottom-20">So long as I didn't go over my caloric limit for the day, I didn't gain
+                        <li >So long as I didn't go over my caloric limit for the day, I didn't gain
                             any weight no matter
                             what
                             type of foods I ate EXCEPT for high fructose corn syrup.
                         </li>
-                        <li>I didn't need to go on a "special diet" to get back to my usual (healthy) weight after
+                        <li class="bottom-20">I didn't need to go on a "special diet" to get back to my usual (healthy) weight after
                             having gained a lot of belly fat and weight.
                         </li>
                         <li>Losing the last 10-15 pounds were the most difficult pounds to lose - no surprise there.
@@ -88,7 +87,7 @@ include('includes/header.php'); ?>
                             with six-pack abs or just a lean physique !
                         </li>
                     </ul>
-                    <img src="images/struggles.jpg" class="float-left" alt="experience" title="Experience"/>
+                    <img src="images/struggles.jpg" class="float-left top-0" alt="experience" title="Experience"/>
 
                     <ul class="list-unstyled">
 
@@ -96,7 +95,7 @@ include('includes/header.php'); ?>
                             numerous problems.
                         </li>
                         <li>When I increased the total number of meals/snacks per day, <span
-                                class="underline">without </span>going over my caloric limit for the
+                                class="underline">without</span> going over my caloric limit for the
                             day, I lost weight more easily.
                         </li>
                         <li>When I ate more foods with natural sugar, like fruit, I lost
@@ -114,7 +113,7 @@ include('includes/header.php'); ?>
                         <li>I learned how to cook simple, fast meals and now I love to cook!</li>
                         <li>My overall confidence level went down when I had a lot of belly fat and it went to its
                             highest when I had
-                            six­pack abs!
+                            six-pack abs!
                         </li>
                         <li class="bottom-20">Depression makes getting and staying motivated much, much harder to do; I
                             didn't
@@ -122,10 +121,10 @@ include('includes/header.php'); ?>
                             plummeted.
                         </li>
                     </ul>
-                    <img src="images/waistline.jpg" class="float-left" alt="end_result" title="End Result">
+                    <img src="images/waistline.jpg" class="float-left top-0" alt="end_result" title="End Result">
                     <ul class="list-unstyled">
                         <li>Success at the <span class="underline">beginning</span> of my weight loss journey was
-                            <span class="underline">critical</span> for my long­term success; it got
+                            <span class="underline">critical</span> for my long-term success; it got
                             me really motivated to keepgoing and feel like I could reach my exact goal!
                         </li>
                         <li>An excellent
@@ -142,19 +141,19 @@ include('includes/header.php'); ?>
                             the process!
                         </li>
                         <li>When you are ravenously hungry you tend to make very poor food choices, such as
-                            choosing high­sugar, high­fat, high­calorie foods, as well as over­indulging on them.
+                            choosing high-sugar, high-fat, high-calorie foods, as well as over-indulging on them.
                         </li>
                         <li class="bottom-20"> If you plan ahead with your meals and snacks and then find yourself short
                             on time, you'll
                             find that you can maintain your healthy eating without difficulty.
                         </li>
-                        <li>I have a sweet­tooth and I satisfy it when I need to without ever gaining any belly fat or
+                        <li>I have a sweet-tooth and I satisfy it when I need to without ever gaining any belly fat or
                             weight!
                         </li>
                         <li>Individuals who are overweight and individuals with eating disorders who are very thin have
                             a lot in common.
                         </li>
-                        <li>Staying out of a food­rich environment is key!</li>
+                        <li>Staying out of a food-rich environment is key!</li>
                     </ul>
 
                 </div>
@@ -169,7 +168,7 @@ include('includes/header.php'); ?>
                 <div class="executiveweight_text">
                     <img src="images/end_result.jpg" class="float-left" alt="struggles">
                     <ul>
-                        <li>You will have all of your questions answered during your FREE­CONSULTATION and find out if I
+                        <li>You will have all of your questions answered during your FREE-CONSULTATION and find out if I
                             think the Dream WeightCoaching Program is exactly what you need for success!
                         </li>
                         <li>You will receive
@@ -186,10 +185,10 @@ include('includes/header.php'); ?>
                         </li>
                         <li>You will be held accountable!</li>
                         <li class="bottom-20">You will learn what the underlying root causes of your weight
-                            issues are and how you can overcome them so they don'tundermine your weight loss journey!
+                            issues are and how you can overcome them so they don't undermine your weight loss journey!
                         </li>
 
-                        <li>You will learn to create daily, weekly and long­term goals!</li>
+                        <li>You will learn to create daily, weekly and long-term goals!</li>
                         <li>You will receive a plan you can follow
                             which outlines and targets exactly what you'll need to do to accomplish your goals now in a
                             way
@@ -200,7 +199,7 @@ include('includes/header.php'); ?>
                             your goals!
                         </li>
                         <li>You will receive my eating disorders knowledge and experience to help you overcome
-                            any fears you might have tow ards eating and gaining weight!
+                            any fears you might have towards eating and gaining weight!
                         </li>
                         <li>You will learn how to fuel your body
                             before and after your workouts so that you can burn the maximum number of calories each
@@ -220,9 +219,9 @@ include('includes/header.php'); ?>
                     <div class="inner_hed_four"><b>WHAT ELSE YOU CAN EXPECT FROM ME:</b></div>
                 </div>
                 <div class="executiveweight_text">
-                    <img src="images/anthony_small.jpg" alt="anthony_small" class="float-left" title="Anthony">
+                    <img src="images/with_dog.JPG" alt="anthony_small" class="float-left" title="Anthony">
                     <ul class="list-unstyled">
-                        <li>Professionalism ­ always!</li>
+                        <li>Professionalism, always!</li>
                         <li>24/7 support!</li>
                         <li>The highest level of weight management expertise!</li>
                         <li>The utmost of concern and dedication for you, your unique situation, and your personal needs
