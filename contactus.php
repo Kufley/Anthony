@@ -97,7 +97,23 @@ if (isset($_POST['submit']) && $_POST['submit'] != '' && $_POST['submit'] == 'su
 </script>
 
 <!--CONTENT AREA START-->
-
+<div id="boxes">
+    <div id="dialog" class="window">
+        <div class="header-popup">Life-Saving Christmas Gift!!!</div>
+        <div id="popupfoot"><a href="#" class="fa fa-close close"><img src="images/closep.png"></a></div>
+        <div class="body-popup">
+            <img src="images/tree.png" alt="tree" class="left">
+            <div class="text-body">
+                <p class="gift">Gift Certificate for a Dream Weight Coaching Program!</p>
+                <p class="help">Help someone change their body and their life now!!</p>
+                <p class="buy"><a href="http://www.weightlosshappens.com/coaching-programs.php">BUY GIFT CERTIFICATE
+                        NOW!</a></p>
+                <img class="right" src="images/caption.png" alt="merry cristmas">
+            </div>
+        </div>
+    </div>
+    <div id="mask"></div>
+</div>
 <div class="content_area contact-page-main">
 <div class="med_area">
   <div class="med_arealeft page-contact">
@@ -106,7 +122,7 @@ if (isset($_POST['submit']) && $_POST['submit'] != '' && $_POST['submit'] == 'su
         <div class="inner_hed" style="padding:5px 0px 5px 0px;"> Contact Anthony </div>
       </div>
       <div class="contact_box">
-        <div class="contact_box_first_line" style="  margin:5px 0px 0px 5px;" >Anthony Wilson <span >RD, MS</span> </div>
+        <div class="contact_box_first_line" style="  margin:5px 0px 0px 5px;" >Anthony Wilson, RD, MS</div>
         <div class="contact_phone_box" style="  margin:0px 0px 2px 5px;">
           <!-- <div class="contact_phone_text" >Phone: 631.336.6153</div>--> 
         </div>

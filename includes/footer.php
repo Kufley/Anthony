@@ -86,10 +86,29 @@ if ($('#back-to-top').length) {
 <script src="<?php echo $config['site_url'];?>js/scroll/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="<?php echo $config['site_url'];?>js/bootstrap.min.js"></script> 
 <script>
-    $(document).ready(function() {
 
-            setTimeout(function () {
-                var id = '#dialog';
+    $(document).ready(function() {
+        var id = '#dialog';
+        setTimeout(function () {
+
+        if (sessionStorage.getItem('dialog') !== 'true') {
+            if(location.href == "http://www.weightlosshappens.com/coaching-programs.php"){
+                if($(window).width() > 450) {
+                    $('.buy a').attr("href", "#popup").appendTo(".buy");
+
+                    $('.buy a').click(function (e) {
+                        $(id).hide();
+                        $("#mask").hide();
+                    });
+                } else {
+                $('.buy a').attr("href", "#popup2").appendTo(".buy");
+
+                $('.buy a').click(function (e) {
+                    $(id).hide();
+                    $("#mask").hide();
+                });
+                }
+            }
 
 //Get the screen height and width
                 var maskHeight = $(document).height();
@@ -127,10 +146,14 @@ if ($('#back-to-top').length) {
                     $(this).hide();
                     $('.window').hide();
                 });
-            }, 10000);
+
+            sessionStorage.setItem('dialog','true');
+        }
+        }, 10000);
+
+
+        console.log(location.href);
     });
-
-
 
 
 </script>

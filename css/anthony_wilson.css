@@ -603,73 +603,12 @@ ul.meetanthony_list li {
 	color: #1122cc;
 	text-decoration: none;
 }
-.footer_area {
-/*width:962px;
-	height:153px;
-	margin:0 auto;
-	background-color:#440a60;*/
-}
-.west_islip {
-	width: 100%;
-	text-align: center;
-	font-size: 16px;
-	color: #fff;
-	float: left;
-	padding: 27px 0 0 0;
-	font-family: 'Abel', sans-serif;
-}
-.footer_nav {
-	width: 100%;
-	float: left;
-	font-size: 12px;
-	color: #FFF;
-	padding: 25px 0 0 0;
-	text-align: center;
-}
-.footer_nav a {
-	color: #FFF;
-	text-decoration: none;
-	padding: 0px 5px 0 5px;
-}
-.footer_nav a:hover {
-	color: #FFF;
-	text-decoration: underline;
-}
-.reserved_area {
-	width: 100%;
-	float: left;
-	padding: 28px 0 0 0;
-	font-family: Tahoma, Geneva, sans-serif;
-}
-.reserved_left {
-	width: 400px;
-	float: left;
-	font-size: 12px;
-	color: #dec9fb;
-	padding: 0px 0 0 12px;
-}
-.reserved_right {
-	width: 300px;
-	float: right;
-	font-size: 12px;
-	color: #dec9fb;
-	text-align: right;
-	padding: 0px 9px 22px 0px;
-}
-.reserved_right a {
-	font-size: 12px;
-	color: #dec9fb;
-	text-decoration: underline;
-}
-.reserved_right a:hover {
-	font-size: 12px;
-	color: #dec9fb;
-	text-decoration: none;
-}
+
+
 .inner_hed {
 	/*width: 95%;
 	float: left;*/
-	font-size: 30px;
+	font-size: 36px;
 	color: #470964;
 	font-weight: bold;
 	font-family: 'Abel', sans-serif;
@@ -711,7 +650,7 @@ ul.meetanthony_list li {
 .programs_below {
 	color: #470964;
 	width: 100%;
-	font-size: 18px;
+	font-size: 20px;
 	font-family: 'Abel', sans-serif;
 	font-weight: bold;
 	padding: 0 0 19px 0;
@@ -2037,7 +1976,7 @@ img.popup_weightarticle1 {
 	font-weight: bold;
 	font-family: 'Abel', sans-serif;
 	padding: 0px 0px 0px 0px;
-	margin: 15px 0px 8px 247px;
+	margin: 15px 0px 8px 253px;
 }
 .hi_second {
 	float: left;
@@ -2333,13 +2272,17 @@ img.popup_weightarticle1 {
 .margin-top-20{margin-top: 20px}
 .margin-top_-20{margin-top: -20px !important}
 .font-26{font-size: 26px;margin-top: 20px}
-.font-21{font-size: 21px; margin-top: -10px}
+.font-21{font-size: 24px; margin-top: -10px}
 .bottom-20{margin-bottom: 20px !important;}
 .bottom-40{margin-bottom: 40px !important;}
 .float-left.top-0{margin-top: 0 !important;}
 .list-unstyled2 li:nth-child(3n){margin-bottom: 20px}
+
+
+@media (max-width:991px){.inner_hed_four {margin: 15px 0px 8px 205px;padding-right: 30px;}}
 @media (max-width:992px){
-	/*.contact_name_field.phone_field{display: flex; justify-content: space-between}*/
+	.executiveweight_text ul {padding: 0 0 0 14px}
+
 	.phone_field input,.phone_field #phone1{width: 31.9% !important;}
 	.free_tab{margin: 0}
 	.payment_content li:last-child {flex-direction: column}

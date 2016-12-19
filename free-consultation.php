@@ -86,6 +86,23 @@ if (isset($_POST['submit']) && $_POST['submit'] != '' && $_POST['submit'] == 'su
     }
 
 </script>
+<div id="boxes">
+    <div id="dialog" class="window">
+        <div class="header-popup">Life-Saving Christmas Gift!!!</div>
+        <div id="popupfoot"><a href="#" class="fa fa-close close"><img src="images/closep.png"></a></div>
+        <div class="body-popup">
+            <img src="images/tree.png" alt="tree" class="left">
+            <div class="text-body">
+                <p class="gift">Gift Certificate for a Dream Weight Coaching Program!</p>
+                <p class="help">Help someone change their body and their life now!!</p>
+                <p class="buy"><a href="http://www.weightlosshappens.com/coaching-programs.php">BUY GIFT CERTIFICATE
+                        NOW!</a></p>
+                <img class="right" src="images/caption.png" alt="merry cristmas">
+            </div>
+        </div>
+    </div>
+    <div id="mask"></div>
+</div>
 <?php //include_once('popup_manager/open_popup_js.php');?>
 <link href="<?php echo $config['site_url']; ?>popup_manager/popup.css" rel="stylesheet" type="text/css"/>
 <!--CONTENT AREA START-->

@@ -311,7 +311,8 @@ a, a:hover {
 
 .coaching-full-div .executiveweight_text p {
     font-family: verdana;
-    font-size: 14px;
+    font-size: 20px;
+    padding: 2px 50px 15px;
 }
 
 .med_arealeft.coaching-full-div .meetanthony_left {
@@ -1156,7 +1157,8 @@ iframe {
     font-size: 24px;
     font-weight: bold;
     padding: 0;
-    text-align: left;}
+    text-align: left;
+    margin-bottom: -16px;}
 .realize-right p, .way-main p, .top-article p {
     color: #000;
     font-family: arial;
@@ -1166,7 +1168,7 @@ iframe {
     padding-top: 18px;
     text-align: justify;
 }
-
+.float-left.top-home{margin: 8px 20px 15px 0; padding-right: 0}
 .lack .realize-right p {
     padding: 20px 0 14px;
 }
@@ -1208,7 +1210,7 @@ iframe {
 
 .way-main p {
     /*max-width: 93%;*/
-    padding-top: 15px;
+    padding-top: 3px;
 }
 
 .way-main {
@@ -1247,7 +1249,7 @@ iframe {
     color: rgb(255, 255, 255);
     margin: 0 auto 25px;
     padding: 20px;
-    min-height: 300px;
+    min-height: 260px;
 }
 
 .client-bottom {
@@ -1457,7 +1459,7 @@ iframe {
     float: left;
     font-size: 12px;
     padding: 0 0 0 0px;
-    width: 400px;
+
 }
 
 .reserved_right {
@@ -1466,7 +1468,7 @@ iframe {
     font-size: 12px;
     padding: 0 0px 22px 0;
     text-align: right;
-    width: 300px;
+
 }
 
 .reserved_right a {
@@ -1616,7 +1618,7 @@ iframe {
 .meetanthony_right.size_67 {
     width: 65%
 }
-
+.meetanthony_right.size_67 ul{margin: 0}
 .meetanthony_left.size-32 {
     width: 32%;
     margin-right: 2%
@@ -1655,7 +1657,9 @@ iframe {
 .buy a{font-size: 24px; font-weight: normal; text-decoration: underline; color:#4e126a;}
 .underline{text-decoration: underline}
 .float-left{float: left; max-width: 208px;
-    margin: -26px 40px 15px 0 }
+    margin: -29px 40px 15px 0 }
+.disclaimer{line-height: 18px;margin-top: 15px}
+
 /*responsive*/
 @media (min-width: 992px) and (max-width: 1200px) {
     .container {
@@ -1673,6 +1677,8 @@ iframe {
         width: 20%;
     }
     .banner .banner01:nth-child(4), .banner .banner01:last-child{display: none}
+    .float-left{margin: -26px 40px 15px 0 }
+    .float-left.top-one{margin-top: -43px}
 }
 @media (max-width: 991px) {
     .display-none{display: none}
@@ -1778,7 +1784,7 @@ iframe {
 
     .abo-new-main {
 
-        min-height: auto;
+        min-height: 160px;
     }
 
     .med_arearight, .med_arealeft {
@@ -2060,8 +2066,14 @@ iframe {
     }
 
 }
-
+@media (max-width: 768px) {
+   .float-left {
+        padding-right: 14px;
+    }
+    .float-left.top-one{margin-top:0}
+}
 @media (max-width: 767px) {
+
     .float-left{margin-top: 0 }
     #popupfoot {
         right: 20px !important;
@@ -2238,6 +2250,7 @@ iframe {
     .abo-new-main {
         margin: 0 auto 30px;
         max-width: 100%;
+        min-height: 200px;
     }
 
     .Transform-list li {
@@ -2747,7 +2760,7 @@ iframe {
         border-radius: 0;
         font-size: 10px;
         height: auto;
-        padding: 11px 5px;
+        padding: 11px 2px;
         width: 95%;
     }
 
@@ -2772,8 +2785,12 @@ iframe {
         text-align: left
     }
 }
+@media (max-width: 595px){
+    .abo-new-main {min-height: 240px}
+}
 
 @media (max-width: 495px) {
+    .abo-new-main {min-height: 260px}
     .permanent_weight_main:nth-child(3n), .permanent_weight_main, .weight_articles_main .permanent_weight_main {
         display: inline-block;
         float: none;
@@ -2796,11 +2813,16 @@ iframe {
 }
 
 @media (max-width: 479px) {
-    .float-left {
+    .abo-new-main {
+        min-height: 280px;
+    }
+    .inner_hed_four{padding-right: 0px;}
+    .float-left, .float-left.top-home {
         float: none;
         margin: 0 auto 10px;
         text-align: center;
         display: block;
+        padding-right: 0;
     }
     .header-popup, .gift{font-size:22px !important;}
     .help{font-size:27px !important; margin-bottom: 35px !important;}
@@ -3062,7 +3084,21 @@ iframe {
         display: none;
     }
 }
-
+@media (max-width: 435px) {
+    .abo-new-main {
+        min-height: 320px
+    }
+}
+@media (max-width: 410px) {
+    .abo-new-main {
+        min-height: 340px
+    }
+}
+@media (max-width: 365px) {
+    .abo-new-main {
+        min-height: 420px
+    }
+}
 /*@media(min-width: 406px) and (max-width:479px)  {*/
 /*.free-cnsutant-green {*/
 /*height: 83px;*/

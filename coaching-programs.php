@@ -7,7 +7,23 @@ include('includes/header.php') ;
   ?>
 
 <!--CONTENT AREA START-->
-
+<div id="boxes">
+  <div id="dialog" class="window">
+    <div class="header-popup">Life-Saving Christmas Gift!!!</div>
+    <div id="popupfoot"><a href="#" class="fa fa-close close"><img src="images/closep.png"></a></div>
+    <div class="body-popup">
+      <img src="images/tree.png" alt="tree" class="left">
+      <div class="text-body">
+        <p class="gift">Gift Certificate for a Dream Weight Coaching Program!</p>
+        <p class="help">Help someone change their body and their life now!!</p>
+        <p class="buy"><a href="http://www.weightlosshappens.com/coaching-programs.php">BUY GIFT CERTIFICATE
+            NOW!</a></p>
+        <img class="right" src="images/caption.png" alt="merry cristmas">
+      </div>
+    </div>
+  </div>
+  <div id="mask"></div>
+</div>
 <div class="content_area">
 <div class="med_area">
   <div class="med_arealeft coaching-full-div">
@@ -79,8 +95,8 @@ include('includes/header.php') ;
      <div>
        <div class="programs_below">Please choose one of the programs below that best fits you, and let&rsquo;s get
          started!</div>
-         <div class="programs_below font-26">CREATE YOUR OWN PROGRAM!!</div>
-         <div class="programs_below font-21">Use <span class="underline">your</span> hours on the topics <span class="underline">you</span> want to use them on!</div>
+         <div class="programs_below font-26 underline">CREATE YOUR OWN PROGRAM!!</div>
+         <div class="programs_below font-21">Use <span class="underline">YOUR</span> hours on the topics <span class="underline">YOU</span> want to use them on!</div>
 
      </div>
     <div class="stages_area new_page">
@@ -245,7 +261,7 @@ include('includes/header.php') ;
         </div>
         <div class="stages_rowarea1">
           <div class="awareness_col1">
-            <div class="big_picture_col1_align"> <a href="#" name="sus" onClick="openPopup('fadefriend',1,'fade_popup','datafriend',2,'data_on_fade','contect8');">Additional Hours (click Here)</a>
+            <div class="big_picture_col1_align" id="popup"> <a href="#" name="sus" onClick="openPopup('fadefriend',1,'fade_popup','datafriend',2,'data_on_fade','contect8');">Additional Hours (click Here)</a>
               <p> Maintenance, Guidance, Strategies </p>
             </div>
           </div>
@@ -261,7 +277,7 @@ include('includes/header.php') ;
         </div>
         <div class="stages_rowarea1">
           <div class="big_picture_col1">
-            <div class="big_picture_col1_align"> Bonus
+            <div class="big_picture_col1_align"  id="popup2"> Bonus
               <p> 24/7 email access thru entire program! </p>
             </div>
           </div>

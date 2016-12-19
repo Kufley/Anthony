@@ -705,6 +705,7 @@ include("./include/config.inc.php");
                             HERE </a>TO GO TO THE <a href="<?php echo $config['site_url']; ?>coaching-programs.php">
                             &quot;COACHING PROGRAMS PAGE&rdquo; </a> AND READ MORE ABOUT THE SILVER COACHING PROGRAM
                     </div>
+                    <div class="question"><a href="<?php echo $config['site_url']; ?>coaching-programs.php">BACK TO COACHING PROGRAMS PAGE</a></div>
                 </div>
             </div>
         </div>
@@ -713,17 +714,30 @@ include("./include/config.inc.php");
 <!--content ends here--><!--Footer start here -->
 
 <footer class="footer">
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">&copy; Copyright of WeightLossHappens.com | All Rights Reserved</div>
-
-                <div class="col-md-6"><span>Webpage Powered By :- <a href="http://adnig.com/" target="_blank">Adnig
-                            Technology Pvt. Ltd.</a></span></div>
+    <div class="footer_area clearfix container">
+        <div class="west_islip">Anthony Wilson, RD, MS</div>
+        <div class="footer_nav">
+            <a href="index.php">Home</a>  |
+            <a href="about-anthony.php">About Anthony</a>  |
+            <a href="services.php">Services</a>  |
+            <a href="coaching-programs.php">Coaching Programs</a>  |
+            <a href="weight-loss-articles.php">Weight Loss Articles</a>  |
+            <a href="success.php">Success Stories</a>  |
+            <a href="contactus.php">Contact Anthony</a>
+        </div>
+        <div class="reserved_area">
+            <div class="reserved_left">All Copyright <?php echo @date('Y');?>. &copy; Reserved Anthony Wilson Consulting</div>
+            <div class="reserved_right">
+                Web Development <a href="http://Wisitech.com" target="_blank">Wisitech</a>
             </div>
+        </div>
+        <div class="west_islip">
+            DISCLAIMER: This site does not provide medical advice, diagnosis, or treatment. The services and information on this site are for informational purposes only and do not constitute medical advice or a recommendation for your specific condition or situation. Consult with your primary care physician and get approval from them before you make any changes to your lifestyle and before starting any exercise, nutrition, diet, or weight loss program.
+            <p>*Anthony Wilson Consulting reserves the right to deny a free consultation to anyone for any reason.</p>
         </div>
     </div>
 </footer>
+
 <!--footer ends here--><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
 

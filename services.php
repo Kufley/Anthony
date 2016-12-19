@@ -4,7 +4,23 @@ require_once('include/mainConnect.php');
 require_once($config['absolute_path'].'classes/main.php');	
 include('includes/header.php') ;?>
 <!--CONTENT AREA START-->
-
+<div id="boxes">
+  <div id="dialog" class="window">
+    <div class="header-popup">Life-Saving Christmas Gift!!!</div>
+    <div id="popupfoot"><a href="#" class="fa fa-close close"><img src="images/closep.png"></a></div>
+    <div class="body-popup">
+      <img src="images/tree.png" alt="tree" class="left">
+      <div class="text-body">
+        <p class="gift">Gift Certificate for a Dream Weight Coaching Program!</p>
+        <p class="help">Help someone change their body and their life now!!</p>
+        <p class="buy"><a href="http://www.weightlosshappens.com/coaching-programs.php">BUY GIFT CERTIFICATE
+            NOW!</a></p>
+        <img class="right" src="images/caption.png" alt="merry cristmas">
+      </div>
+    </div>
+  </div>
+  <div id="mask"></div>
+</div>
 <div class="content_area">
 <div class="med_area">
   <div class="med_arealeft width-100">
