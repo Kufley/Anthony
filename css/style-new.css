@@ -1659,6 +1659,7 @@ iframe {
 .float-left{float: left; max-width: 208px;
     margin: -29px 40px 15px 0 }
 .disclaimer{line-height: 18px;margin-top: 15px}
+.float-left.top-one.top-over{margin-top: -66px}
 
 /*responsive*/
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2070,7 +2071,7 @@ iframe {
    .float-left {
         padding-right: 14px;
     }
-    .float-left.top-one{margin-top:0}
+    .float-left.top-one.top-over, .float-left.top-one{margin-top:0}
 }
 @media (max-width: 767px) {
 

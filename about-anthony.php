@@ -78,11 +78,17 @@ include('includes/header.php'); ?>
                             </li>
                             <li>I gained vast amounts of belly fat when I consumed sugary liquids which were high in "high-fructose corn syrup" (ie: soda) even when I didn't go over my daily caloric intake.
                             </li>
+
                             <li>I didn't gain any weight or belly fat when I ate most of my calories at night, so long as I didn't go over my caloric limit for the day.
                             </li>
                             <li class="bottom-20">I didn't gain any weight when I ate numerous foods on a regular basis that were high in sugar, so long as they were NOT high in high-fructose corn syrup.
                             </li>
-
+                        </ul>
+                    </div>
+                    <div class="meetanthony_left size_32 width-25"><img src="images/struggles.jpg"
+                                                                        class="float-left top-one top-over" alt="experience" title="Experience"/></div>
+                    <div class="meetanthony_right size_67">
+                        <ul>
                             <li>So long as I didn't go over my caloric limit for the day I didn't gain any weight no matter what tpe of food I ate EXCEPT for high-fructose corn syrup.
                             </li>
                             <li>I didn't need to go on a "special diet" to get back to my usual (healthy) weight after having gained a lot of belly fat and weight previously.
@@ -93,7 +99,7 @@ include('includes/header.php'); ?>
                             </li>
                         </ul>
                     </div>
-                    <div class="meetanthony_left size_32 width-25"><img src="images/struggles.jpg"
+                    <div class="meetanthony_left size_32 width-25"><img src="images/download.jpg"
                                                                         class="float-left top-0" alt="experience"
                                                                         title="Experience"/></div>
                     <div class="meetanthony_right size_67">
@@ -162,7 +168,7 @@ include('includes/header.php'); ?>
                     </div>
                     <div class="meetanthony_right size_67">
                         <ul>
-                            <li>You will have all of your questions answered during your FREE-CONSULTATION and find out if I think the Dream Weight Coaching Program is exactly what you need for success with your weight!
+                            <li>You will have all of your questions answered during your FREE CONSULTATION and find out if I think the Dream Weight Coaching Program is exactly what you need for success with your weight!
                             </li>
                             <li>You will receive the same nutrition and behavioral strategies that have helped all of the overweight individuals that I have worked with in the past!
                             </li>
@@ -170,7 +176,13 @@ include('includes/header.php'); ?>
                             </li>
                             <li class="bottom-20">You will learn how to get into the right frame of mind for what you are about to accomplish so that you can get off to the right start!
                             </li>
-
+                        </ul>
+                    </div>
+                    <div class="meetanthony_left size_32 width-25"><img src="images/dietplans.jpg"
+                                                                        class="float-left top-0" alt="experience"
+                                                                        title="Experience"/></div>
+                    <div class="meetanthony_right size_67">
+                        <ul class="list-unstyled">
                             <li>You will be held accountable!</li>
                             <li>You will learn what the underlying root causes of your weight issues are and how you can overcome them so they don't undermine your weight loss efforts!
                             </li>

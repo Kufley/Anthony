@@ -250,7 +250,7 @@ include('includes/header.php');
             <h2>Meet Anthony</h2>
             <div class="play_video">
                 <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/_byJ0IzCAAw?rel=0&amp;controls=0&amp;showinfo=0"
+                        src="https://www.youtube.com/embed/_byJ0IzCAAw?rel=0&amp;controls=2&amp;disablekb=1&amp;showinfo=0"
                         frameborder="0" allowfullscreen></iframe>
             </div>
         </div>

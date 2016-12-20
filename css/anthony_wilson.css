@@ -2277,7 +2277,7 @@ img.popup_weightarticle1 {
 .bottom-40{margin-bottom: 40px !important;}
 .float-left.top-0{margin-top: 0 !important;}
 .list-unstyled2 li:nth-child(3n){margin-bottom: 20px}
-
+#content_1 .popup_weightarticle_contents > ul {display: inline-block}
 
 @media (max-width:991px){.inner_hed_four {margin: 15px 0px 8px 205px;padding-right: 30px;}}
 @media (max-width:992px){
