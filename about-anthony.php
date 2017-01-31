@@ -5,23 +5,23 @@ require_once($config['absolute_path'] . 'classes/main.php');
 include('includes/header.php'); ?>
 
 <!--CONTENT AREA START-->
-<div id="boxes">
-    <div id="dialog" class="window">
-        <div class="header-popup">Life-Saving Christmas Gift!!!</div>
-        <div id="popupfoot"><a href="#" class="fa fa-close close"><img src="images/closep.png"></a></div>
-        <div class="body-popup">
-            <img src="images/tree.png" alt="tree" class="left">
-            <div class="text-body">
-                <p class="gift">Gift Certificate for a Dream Weight Coaching Program!</p>
-                <p class="help">Help someone change their body and their life now!!</p>
-                <p class="buy"><a href="http://www.weightlosshappens.com/coaching-programs.php">BUY GIFT CERTIFICATE
-                        NOW!</a></p>
-                <img class="right" src="images/caption.png" alt="merry cristmas">
-            </div>
-        </div>
-    </div>
-    <div id="mask"></div>
-</div>
+<!--<div id="boxes">-->
+<!--    <div id="dialog" class="window">-->
+<!--        <div class="header-popup">Life-Saving Christmas Gift!!!</div>-->
+<!--        <div id="popupfoot"><a href="#" class="fa fa-close close"><img src="images/closep.png"></a></div>-->
+<!--        <div class="body-popup">-->
+<!--            <img src="images/tree.png" alt="tree" class="left">-->
+<!--            <div class="text-body">-->
+<!--                <p class="gift">Gift Certificate for a Dream Weight Coaching Program!</p>-->
+<!--                <p class="help">Help someone change their body and their life now!!</p>-->
+<!--                <p class="buy"><a href="http://www.weightlosshappens.com/coaching-programs.php">BUY GIFT CERTIFICATE-->
+<!--                        NOW!</a></p>-->
+<!--                <img class="right" src="images/caption.png" alt="merry cristmas">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div id="mask"></div>-->
+<!--</div>-->
 <div class="content_area">
     <div class="med_area">
         <div class="med_arealeft width-100">
@@ -85,7 +85,7 @@ include('includes/header.php'); ?>
                             </li>
                         </ul>
                     </div>
-                    <div class="meetanthony_left size_32 width-25"><img src="images/struggles.jpg"
+                    <div class="meetanthony_left size_32 width-25"><img src="images/yes.jpg"
                                                                         class="float-left top-one top-over" alt="experience" title="Experience"/></div>
                     <div class="meetanthony_right size_67">
                         <ul>
@@ -97,13 +97,6 @@ include('includes/header.php'); ?>
                             <li>Losing the last 10-15 pounds were the most difficult pounds to lose.</li>
                             <li class="bottom-20">I would never undergo bariatric surgery because it largely takes away one of life's greatest pleasures - eating!
                             </li>
-                        </ul>
-                    </div>
-                    <div class="meetanthony_left size_32 width-25"><img src="images/download.jpg"
-                                                                        class="float-left top-0" alt="experience"
-                                                                        title="Experience"/></div>
-                    <div class="meetanthony_right size_67">
-                        <ul class="list-unstyled">
 
                             <li>I can still eat all of my favorite foods each week and still maintain my weight.
                             </li>
@@ -113,6 +106,14 @@ include('includes/header.php'); ?>
                             </li>
                             <li >When I increased the total number of meals/ snacks per day <span class="underline">without</span> going over my caloric limit for the day, I lost weight more easily.
                             </li>
+                        </ul>
+                    </div>
+                    <div class="meetanthony_left size_32 width-25"><img src="images/download.jpg"
+                                                                        class="float-left top-38" alt="experience"
+                                                                        title="Experience"/></div>
+                    <div class="meetanthony_right size_67">
+                        <ul class="list-unstyled">
+
                             <li class="bottom-20">When I ate more foods with natural sugar, like fruit, I lost most of my desire for foods with artificial sugar, like candy.
                             </li>
 
@@ -121,22 +122,24 @@ include('includes/header.php'); ?>
                             <li>Drinking good tasting water with zero calories instead of drinking caloric beverages like juice or soda was one of the best and smartest things I did to decrease my caloric consumption.
                             </li>
                             <li>I learned how to cook simple, fast meals and now I love to cook!</li>
-                            <li class="bottom-20">My overall confidence level went down when I had a lot of belly fat and it went to its highest when I had six-pack abs!</li>
-                        </ul>
-                    </div>
 
-                    <div class="meetanthony_left size_32 width-25"><img src="images/waistline.jpg"
-                                                                        class="float-left top-0" alt="end_result"
-                                                                        title="End Result"></div>
-                    <div class="meetanthony_right size_67">
-                        <ul class="list-unstyled">
                             <li>Depression makes getting and staying motivated much, much harder to do.
                             </li>
                             <li>Depression can lead to sleeping a lot and not eating many meals which can cause your metabolism to plummet if you don't take in enough calories.
                             </li>
+                            <li class="bottom-20">My overall confidence level went down when I had a lot of belly fat and it went to its highest when I had six-pack abs!</li>
+                        </ul>
+                    </div>
+
+                    <div class="meetanthony_left size_32 width-25"><img src="images/end_result.jpg"
+                                                                        class="float-left top-0" alt="end_result"
+                                                                        title="End Result"></div>
+                    <div class="meetanthony_right size_67">
+                        <ul class="list-unstyled">
                             <li>Success at the <span class="underline">beginning</span> of my weight loss journey was <span class="underline">critical</span> for my long-term success; it got me really motivated to keep going and feel like I could reach my exact goals.
                             </li>
-                            <li class="bottom-20">An excellent support system, a healthy environment, planning ahead, accurate nutrition information and staying motivated are keys to success!
+
+                            <li>An excellent support system, a healthy environment, planning ahead, accurate nutrition information and staying motivated are keys to success!
                             </li>
 
                             <li>I was an emotional eater and ate to take myself out of a stressed, negative state of mind and put myself into a more relaxed, positive state of mind!
@@ -145,7 +148,14 @@ include('includes/header.php'); ?>
                             </li>
                             <li class="bottom-20">When you are ravenously hungry you tend to make very poor food choices, such as choosing high-sugar, high-fat, high-calorie foods as well as over-indulging on them.
                             </li>
+                        </ul>
+                    </div>
 
+                    <div class="meetanthony_left size_32 width-25"><img src="images/assessment.jpg"
+                                                                        class="float-left top-25" alt="end_result"
+                                                                        title="End Result"></div>
+                    <div class="meetanthony_right size_67">
+                        <ul class="list-unstyled">
                             <li>If you plan ahead with your meals and snacks and then find yourself short of time during the day, you'll find you can maintain your healthy eating without difficulty.
                             </li>
                             <li>I have a sweet-tooth and I satisfy it when I need to without ever gaining any belly fat or weight!</li>
@@ -164,7 +174,7 @@ include('includes/header.php'); ?>
 
                 <div class="executiveweight_text">
                     <div class="meetanthony_left size_32 width-25">
-                        <img src="images/end_result.jpg" class="float-left" alt="struggles">
+                        <img src="images/waistline.jpg" class="float-left" alt="struggles">
                     </div>
                     <div class="meetanthony_right size_67">
                         <ul>
@@ -176,25 +186,27 @@ include('includes/header.php'); ?>
                             </li>
                             <li class="bottom-20">You will learn how to get into the right frame of mind for what you are about to accomplish so that you can get off to the right start!
                             </li>
-                        </ul>
-                    </div>
-                    <div class="meetanthony_left size_32 width-25"><img src="images/dietplans.jpg"
-                                                                        class="float-left top-0" alt="experience"
-                                                                        title="Experience"/></div>
-                    <div class="meetanthony_right size_67">
-                        <ul class="list-unstyled">
                             <li>You will be held accountable!</li>
                             <li>You will learn what the underlying root causes of your weight issues are and how you can overcome them so they don't undermine your weight loss efforts!
                             </li>
 
+
+
                             <li>You will learn to create daily, weekly, and long-term goals!</li>
                             <li class="bottom-20">You will receive a plan you can follow which outlines and targets exactly what you'll need to accomplish your goals in a way where you can eat without feeling any deprivation at all!
                             </li>
-
+                        </ul>
+                    </div>
+                    <div class="meetanthony_left size_32 width-25"><img src="images/salat.png"
+                                                                        class="float-left top-40" alt="experience"
+                                                                        title="Experience"/></div>
+                    <div class="meetanthony_right size_67">
+                        <ul class="list-unstyled">
                             <li>You will start learning behavioral therapy techniques that you can use to empower yourself which will facilitate you with your goals!
                             </li>
                             <li>You will receive my eating disorder knowledge and experience to help you overcome any fears you might have toward eating and gaining weight!
                             </li>
+
                             <li>You will learn how to fuel your body before and after your workouts so that you can burn the maximum number of calories each workout!
                             </li>
                             <li>If you are diabetic you will learn how to deal with your obstacles and eventually overcome them without bariatric surgery!

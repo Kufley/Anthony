@@ -85,78 +85,75 @@ if ($('#back-to-top').length) {
 <script src="<?php echo $config['site_url'];?>js/scroll/jquery.mousewheel.min.js"></script>
 <script src="<?php echo $config['site_url'];?>js/scroll/jquery.mCustomScrollbar.js"></script>
     <script type="text/javascript" src="<?php echo $config['site_url'];?>js/bootstrap.min.js"></script> 
-<script>
-
-    $(document).ready(function() {
-        var id = '#dialog';
-        setTimeout(function () {
-
-        if (sessionStorage.getItem('dialog') !== 'true') {
-            if(location.href == "http://www.weightlosshappens.com/coaching-programs.php"){
-                if($(window).width() > 450) {
-                    $('.buy a').attr("href", "#popup").appendTo(".buy");
-
-                    $('.buy a').click(function (e) {
-                        $(id).hide();
-                        $("#mask").hide();
-                    });
-                } else {
-                $('.buy a').attr("href", "#popup2").appendTo(".buy");
-
-                $('.buy a').click(function (e) {
-                    $(id).hide();
-                    $("#mask").hide();
-                });
-                }
-            }
-
-//Get the screen height and width
-                var maskHeight = $(document).height();
-                var maskWidth = $(window).width();
-
-//Set heigth and width to mask to fill up the whole screen
-                $('#mask').css({'width': maskWidth, 'height': maskHeight});
-
-//transition effect
-                $('#mask').fadeIn(500);
-
-
-//Get the window height and width
-                var winH = $(window).height();
-                var winW = $(window).width();
-
-//Set the popup window to center
-                $(id).css('top', winH / 2 - $(id).height() / 2);
-                $(id).css('left', winW / 2 - $(id).width() / 2);
-
-//transition effect
-                $(id).fadeIn(1000);
-
-//if close button is clicked
-                $('.window .close').click(function (e) {
-//Cancel the link behavior
-                    e.preventDefault();
-
-                    $('#mask').hide();
-                    $('.window').hide();
-                });
-
-//if mask is clicked
-                $('#mask').click(function () {
-                    $(this).hide();
-                    $('.window').hide();
-                });
-
-            sessionStorage.setItem('dialog','true');
-        }
-        }, 10000);
-
-
-        console.log(location.href);
-    });
-
-
-</script>
+<!--<script>-->
+<!---->
+<!--    $(document).ready(function() {-->
+<!--        var id = '#dialog';-->
+<!--        setTimeout(function () {-->
+<!---->
+<!--        if (sessionStorage.getItem('dialog') !== 'true') {-->
+<!--            if(location.href == "http://www.weightlosshappens.com/coaching-programs.php"){-->
+<!--                if($(window).width() > 450) {-->
+<!--                    $('.buy a').attr("href", "#popup").appendTo(".buy");-->
+<!---->
+<!--                    $('.buy a').click(function (e) {-->
+<!--                        $(id).hide();-->
+<!--                        $("#mask").hide();-->
+<!--                    });-->
+<!--                } else {-->
+<!--                $('.buy a').attr("href", "#popup2").appendTo(".buy");-->
+<!---->
+<!--                $('.buy a').click(function (e) {-->
+<!--                    $(id).hide();-->
+<!--                    $("#mask").hide();-->
+<!--                });-->
+<!--                }-->
+<!--            }-->
+<!---->
+<!--//Get the screen height and width-->
+<!--                var maskHeight = $(document).height();-->
+<!--                var maskWidth = $(window).width();-->
+<!---->
+<!--//Set heigth and width to mask to fill up the whole screen-->
+<!--                $('#mask').css({'width': maskWidth, 'height': maskHeight});-->
+<!---->
+<!--//transition effect-->
+<!--                $('#mask').fadeIn(500);-->
+<!---->
+<!---->
+<!--//Get the window height and width-->
+<!--                var winH = $(window).height();-->
+<!--                var winW = $(window).width();-->
+<!---->
+<!--//Set the popup window to center-->
+<!--                $(id).css('top', winH / 2 - $(id).height() / 2);-->
+<!--                $(id).css('left', winW / 2 - $(id).width() / 2);-->
+<!---->
+<!--//transition effect-->
+<!--                $(id).fadeIn(1000);-->
+<!---->
+<!--//if close button is clicked-->
+<!--                $('.window .close').click(function (e) {-->
+<!--//Cancel the link behavior-->
+<!--                    e.preventDefault();-->
+<!---->
+<!--                    $('#mask').hide();-->
+<!--                    $('.window').hide();-->
+<!--                });-->
+<!---->
+<!--//if mask is clicked-->
+<!--                $('#mask').click(function () {-->
+<!--                    $(this).hide();-->
+<!--                    $('.window').hide();-->
+<!--                });-->
+<!---->
+<!--            sessionStorage.setItem('dialog','true');-->
+<!--        }-->
+<!--        }, 10000);-->
+<!--    });-->
+<!---->
+<!---->
+<!--</script>-->
 
 <script src="<?php echo $config['site_url'];?>js/owl.carousel.js"></script> 
 

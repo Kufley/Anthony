@@ -1659,7 +1659,10 @@ iframe {
 .float-left{float: left; max-width: 208px;
     margin: -29px 40px 15px 0 }
 .disclaimer{line-height: 18px;margin-top: 15px}
-.float-left.top-one.top-over{margin-top: -66px}
+.float-left.top-one.top-over{margin-top: -71px}
+.float-left.top-38{margin-top: -38px}
+.float-left.top-44{margin-top: -25px}
+.float-left.top-40{margin-top: -40px}
 
 /*responsive*/
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2075,7 +2078,9 @@ iframe {
 }
 @media (max-width: 767px) {
 
-    .float-left{margin-top: 0 }
+    .float-left.top-38,
+    .float-left.top-44,
+    .float-left.top-40, .float-left{margin-top: 0 }
     #popupfoot {
         right: 20px !important;
     }

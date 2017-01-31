@@ -15,16 +15,13 @@ include('includes/header.php'); ?>
                 <ol type="A">
                     <li><span class="width-pay">Pay now:  $747.</span>
                 <span class="paypal"><!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">-->
-                <form action="" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="DQ6V4D6THUPWS">
-                    <!--<input type="image" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" name="ts" alt="PayPal - The safer, easier way to pay online!" onClick="openPopup('fadefriend',1,'fade_popup','datafriend',2,'data_on_fade','contect23');">
-                    --><img src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"
-        onClick="openPopup('fadefriend',1,'fade_popup','datafriend',2,'data_on_fade','contect23');">
 
-                    <img width="1" height="1" border="0" alt=""
-                         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
-                </form>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="6H2PPLCHZ8YSU">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 </span></li>
                     <li><span class="width-pay">3 easy payments of $269 each, <br class="hidden-small"> $807 in total.</span>
                 <span class="paypal"><form target="_top" action="" method="post">
